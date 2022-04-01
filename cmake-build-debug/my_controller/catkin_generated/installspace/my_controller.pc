@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: my_controller
+Description: Description of my_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs sensor_msgs geometry_msgs nav_msgs actionlib move_base_msgs control_msgs trajectory_msgs interactive_markers moveit_core moveit_ros_perception moveit_ros_planning_interface pluginlib actionlib_msgs

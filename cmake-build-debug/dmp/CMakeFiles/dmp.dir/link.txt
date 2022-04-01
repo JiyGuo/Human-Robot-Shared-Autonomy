@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libdmp.so -o ../devel/lib/libdmp.so CMakeFiles/dmp.dir/src/dmp.cpp.o CMakeFiles/dmp.dir/src/fourier_approx.cpp.o CMakeFiles/dmp.dir/src/radial_approx.cpp.o CMakeFiles/dmp.dir/src/linear_approx.cpp.o  -ltinyxml2 

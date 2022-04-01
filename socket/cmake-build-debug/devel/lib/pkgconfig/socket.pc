@@ -1,0 +1,8 @@
+prefix=/home/jiyguo/ur_ws/src/socket/cmake-build-debug/devel
+
+Name: socket
+Description: Description of socket
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

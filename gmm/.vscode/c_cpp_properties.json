@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/jiy/dmp_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/jiy/dmp_ws/src/dmp/include/**",
+                "/home/jiy/gmm_ws/src/gmm/include/**",
+                "/home/jiy/haption_ws/src/haption_driver/include/**",
+                "/usr/include/**",
+                "/usr/include/eigen3"
+            ],
+            "name": "ROS",
+            "compileCommands":  "/home/jiy/gmm_ws/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}

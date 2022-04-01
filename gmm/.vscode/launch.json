@@ -1,0 +1,30 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "g++ - 生成和调试活动文件",
+                "type": "cppdbg",
+                "request": "launch",
+                "program": "${workspaceFolder}/devel/lib/gmm/gmm_test",//要调试的可执行文件
+                "args": [],
+                "stopAtEntry": false,//设为true则调试运行时会先停在程序开始
+                "cwd": "${workspaceFolder}",
+                "environment": [],
+                "externalConsole": false,
+                "MIMode": "gdb",
+                "setupCommands": [
+                    {
+                        "description": "为 gdb 启用整齐打印",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ],
+                "preLaunchTask": "builtCpp",//要与tasks.json中label的值保持一致
+                "miDebuggerPath": "/usr/bin/gdb"
+            }
+        ]
+    }

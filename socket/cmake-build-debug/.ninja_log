@@ -1,0 +1,17 @@
+# ninja log v5
+1	796	1646997606725668380	build.ninja	12dd2e8ae3bfdba5
+1	247	1646997606993676151	CMakeFiles/socket_test.dir/src/mySocket.cpp.o	c03bef6cb5cf33e4
+0	269	1646997607013676730	CMakeFiles/socket_test.dir/node/socket_test.cpp.o	667764acc0a1ba45
+269	354	1646997607097679163	devel/lib/socket/socket_test	e0645ce0f41fa6b2
+1	727	1647001461668174330	CMakeFiles/socket_test.dir/node/socket_test.cpp.o	667764acc0a1ba45
+727	882	1647001462068173897	devel/lib/socket/socket_test	e0645ce0f41fa6b2
+1	485	1647002309947980774	CMakeFiles/socket_test.dir/node/socket_test.cpp.o	667764acc0a1ba45
+485	634	1647002310095980814	devel/lib/socket/socket_test	e0645ce0f41fa6b2
+1	448	1647003313664429896	CMakeFiles/socket_test.dir/node/socket_test.cpp.o	667764acc0a1ba45
+448	586	1647003313800429970	devel/lib/socket/socket_test	e0645ce0f41fa6b2
+1	492	1647003483236522935	CMakeFiles/socket_test.dir/node/socket_test.cpp.o	667764acc0a1ba45
+492	635	1647003483376523013	devel/lib/socket/socket_test	e0645ce0f41fa6b2
+1	427	1647003507548536438	CMakeFiles/socket_test.dir/node/socket_test.cpp.o	667764acc0a1ba45
+427	564	1647003507684536513	devel/lib/socket/socket_test	e0645ce0f41fa6b2
+1	429	1647003541652555437	CMakeFiles/socket_test.dir/node/socket_test.cpp.o	667764acc0a1ba45
+430	578	1647003541800555520	devel/lib/socket/socket_test	e0645ce0f41fa6b2

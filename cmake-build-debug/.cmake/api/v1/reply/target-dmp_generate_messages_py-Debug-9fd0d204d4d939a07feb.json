@@ -1,0 +1,250 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"generate_messages",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"cmake-build-debug/dmp/cmake/dmp-genmsg.cmake",
+			"/opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake",
+			"dmp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 307,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 479,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 564,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 500,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 486,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 494,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 496,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 492,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 490,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 488,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 498,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "std_msgs_generate_messages_py::@c750896ec12f2418bb31"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "_dmp_generate_messages_check_deps_GetDMPStepPlan::@d1fd0e53f42005bea827"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "_dmp_generate_messages_check_deps_DMPData::@d1fd0e53f42005bea827"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "_dmp_generate_messages_check_deps_GetDMPPlan::@d1fd0e53f42005bea827"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "_dmp_generate_messages_check_deps_LearnDMPFromDemo::@d1fd0e53f42005bea827"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "_dmp_generate_messages_check_deps_DMPTraj::@d1fd0e53f42005bea827"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "_dmp_generate_messages_check_deps_DMPPointStamp::@d1fd0e53f42005bea827"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "_dmp_generate_messages_check_deps_DMPPoint::@d1fd0e53f42005bea827"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "_dmp_generate_messages_check_deps_SetActiveDMP::@d1fd0e53f42005bea827"
+		}
+	],
+	"id" : "dmp_generate_messages_py::@d1fd0e53f42005bea827",
+	"name" : "dmp_generate_messages_py",
+	"paths" : 
+	{
+		"build" : "dmp",
+		"source" : "dmp"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/dmp/CMakeFiles/dmp_generate_messages_py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/dmp/CMakeFiles/dmp_generate_messages_py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/devel/lib/python3/dist-packages/dmp/msg/_DMPData.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/devel/lib/python3/dist-packages/dmp/msg/_DMPPoint.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/devel/lib/python3/dist-packages/dmp/msg/_DMPPointStamp.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/devel/lib/python3/dist-packages/dmp/msg/_DMPTraj.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/devel/lib/python3/dist-packages/dmp/msg/__init__.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/devel/lib/python3/dist-packages/dmp/srv/_GetDMPPlan.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/devel/lib/python3/dist-packages/dmp/srv/_GetDMPStepPlan.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/devel/lib/python3/dist-packages/dmp/srv/_LearnDMPFromDemo.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/devel/lib/python3/dist-packages/dmp/srv/_SetActiveDMP.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/devel/lib/python3/dist-packages/dmp/srv/__init__.py.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

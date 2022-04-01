@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: gmm
+Description: Description of gmm
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: common_msgs image_common message_runtime

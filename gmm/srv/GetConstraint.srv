@@ -1,0 +1,10 @@
+# Currunt data
+float64[] data
+---
+# Returns a constraint couple term. 
+float64[] couple_term
+
+
+
+
+

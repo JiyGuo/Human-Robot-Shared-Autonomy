@@ -1,0 +1,8 @@
+prefix=/home/jiyguo/ur_ws/src/cmake-build-debug/devel
+
+Name: gmm
+Description: Description of gmm
+Version: 0.0.0
+Cflags: -I/home/jiyguo/ur_ws/src/cmake-build-debug/devel/include -I/home/jiyguo/ur_ws/src/gmm/include
+Libs: -L${prefix}/lib 
+Requires: common_msgs image_common message_runtime

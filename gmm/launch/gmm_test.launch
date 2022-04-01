@@ -1,0 +1,3 @@
+<launch>
+	<node name="gmm_test" pkg="gmm" type="gmm_test" respawn="false" output="screen"/>
+</launch>
