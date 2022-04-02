@@ -27,9 +27,11 @@ const int HZ = 125;                 // 频率
 const int N_LIBS=3;                 // 技能库数量
 const int DIM=2;                    // dimensiona
 const double DT = 1.0 / HZ;         // dt
-const double F_M = 25;              // 最大力
+const double F_M = 30;              // 最大力
 // Admittance gain
-const DVector M_D = {300.0,300.0};      // 惯性参数
+//const DVector M_D = {300.0,300.0};      // 惯性参数  /best
+const DVector M_D = {100.0,100.0};
+
 DVector C_D(DIM,0);  // 阻尼参数
 // trajectory information
 const DVector x_0 = {0.52 , -0.22};
@@ -54,6 +56,8 @@ dmp::DMPPoint cur_state;
 nav_msgs::Path points;
 geometry_msgs::PoseStamped this_pose_stamped;
 
+
+
 void Visualize(ros::Publisher &pub, double* pos)
 {
     points.header.stamp = ros::Time::now();
@@ -61,6 +65,7 @@ void Visualize(ros::Publisher &pub, double* pos)
     this_pose_stamped.pose.position.x = pos[0];
     this_pose_stamped.pose.position.y = pos[1];
     this_pose_stamped.pose.position.z = pos[2];
+
     points.poses.push_back(this_pose_stamped);
     pub.publish(points);
 }
@@ -126,12 +131,21 @@ double confi_h(const DVector& force_){
 }
 
 // human confidence
+//double arbitration_fun(const double& c_h,const double& c_r){
+//    double epsilion = 0.01;
+//    double gamma = 2;
+//    double eta = 1;
+//    double pesi = 1.36;
+//    return pesi * (1.0 - 1.0/(1+ exp(-(gamma*c_h) / (c_r+epsilion)+eta)));
+//}
+
 double arbitration_fun(const double& c_h,const double& c_r){
-    double epsilion = 0.05;
-    double gamma = 2;
-    double eta = 1;
-    double pesi = 1.36;
-    return pesi * (1.0 - 1.0/(1+ exp(-(gamma*c_h) / (c_r+epsilion)+eta)));
+    double gamma = 1;
+    double pesi = 0.01;
+    double delta = 1;
+    double para = -gamma* ( 2*(c_h+20*pesi) / (c_r+pesi) - delta );
+    double alpha = 1-1/(1+ exp(para));
+    return 1.5466*alpha;
 }
 
 
@@ -160,6 +174,19 @@ int main(int argc, char **argv){
     dmp_path_pub = n.advertise<nav_msgs::Path>("/dmp/trajectory3",10, true);
     dmp_paths_pub.push_back(dmp_path_pub);
 
+    string argument;
+    if(argc>1){
+        argument = argv[1];
+    }
+    string file_name = "/home/jiyguo/ur_ws/src/data/admmitance/"+ argument +".txt";
+    std::ofstream my_data(file_name,ios::trunc);
+    if (!my_data.is_open())
+    {
+        cout<<file_name<<endl;
+        cout << "Can not open this file" << endl;
+        return -1;
+    }
+
     points.header.frame_id="world";
     this_pose_stamped.header.frame_id = "world";
 
@@ -171,8 +198,6 @@ int main(int argc, char **argv){
     for (int i = 0; i < N_LIBS; ++i) {
         taus[i] = 10;
     }
-
-
     // 创建dmp和dtw对象
     vector<MyDmp*> my_dmps(N_LIBS);
     vector<Dtw*> my_dtws(N_LIBS);
@@ -186,11 +211,15 @@ int main(int argc, char **argv){
     KDL::Frame tmp_frame;
     myController.getRobotFrame(tmp_frame);
     for (int j = 0; j < N_LIBS; ++j) {
+        string dmps_file = "/home/jiyguo/ur_ws/src/data/dmp"+ to_string(j)+".txt";
+        std::ofstream mydata_dmps(dmps_file,ios::trunc);
         for(int i=0;i<trajs[j].times.size();++i){
             tmp_frame.p.x(trajs[j].points[i].positions[0]);
             tmp_frame.p.y(trajs[j].points[i].positions[1]);
+            mydata_dmps<<tmp_frame.p.x()<<" "<<tmp_frame.p.y()<<endl;
             Visualize( dmp_paths_pub[j], tmp_frame.p.data);
         }
+        mydata_dmps.close();
         points.poses.clear();
     }
 
@@ -235,6 +264,15 @@ int main(int argc, char **argv){
     double cur_t=0;
     // Online clasify
     while(ros::ok()){
+
+//        if( cur_t<=2 ){
+//            force_human[0] = 5;
+//            force_human[1] = -5;
+//        }else{
+//            force_human[0] = 0;
+//            force_human[1] = 0;
+//        }
+
         myController.getRobotFrame(cur_frame);
         myController.getRobotVelocity(cur_twist);
         for (int i = 0; i < DIM; ++i) {
@@ -250,12 +288,19 @@ int main(int argc, char **argv){
             find_path(trajs[i],templ_lens[i],templ_counters[i],length_sig,templ_vecs);
             my_dtws[i]->add_data( templ_vecs , sig_vec);
             dtw_dists[i] = my_dtws[i]->get_distance();
+            my_data<<dtw_dists[i]<<" ";
         }
 //        ROS_INFO("~~~~~~~ AFTER find path ~~~~~~~");
-
+        my_data<<sig_vec[0]<<" "<<sig_vec[1]<<" ";
         confidances.clear();
         dtw::Confidances(dtw_dists, confidances);
+        prob.point.x = confidances[0];
+        prob.point.y = confidances[1];
+        prob.point.z = confidances[2];
+        my_data<<prob.point.x<<" "<<prob.point.y<<" "<<prob.point.z<<" ";
+
         size_t idx = std::max_element(confidances.begin(), confidances.end()) - confidances.begin();
+
         my_dmps[idx]->get_dgain(dgain);
 //        std::cout<<"templ_counters[idx]: "<<templ_counters[idx]<<std::endl;
 //        std::cout<<"trajs[idx].points.size(): "<<trajs[idx].points.size()<<std::endl;
@@ -263,18 +308,16 @@ int main(int argc, char **argv){
 //        ROS_INFO("~~~~~~~ BEFOR get_force ~~~~~~~");
 //        at_goal = my_dmps[idx]->get_force(cur_state, couple_term,
 //                      (double)templ_counters[idx]/trajs[idx].points.size() * taus[idx], force_dmp);
+        cur_t = (double)(templ_counters[idx]+1)/trajs[idx].points.size() * taus[idx];
         at_goal = my_dmps[idx]->get_force(cur_state, couple_term,
                                           cur_t, force_dmp);
-        cur_t+=DT;
+//        cur_t+=DT;
 //        ROS_INFO("~~~~~~~ AFTER get_force ~~~~~~~");
 //        cout<<"idx: "<<idx<<endl;
-        if(at_goal){
-            plan_state.velocities[0] = 0;
-            plan_state.velocities[1] = 0;
-            statePub.publish(plan_state);
-            break;
-        }
+
 //        ROS_INFO("~~~~~~~ AFTER at_goals[idx] ~~~~~~~");
+        my_data<<force_human[0]<<" "<<force_human[1]<<" ";
+        my_data<<force_dmp[0]<<" "<<force_dmp[1]<<" ";
 
         // 置信度计算与仲裁
         c_h = confi_h(force_human);
@@ -282,8 +325,8 @@ int main(int argc, char **argv){
         c_r = confidances[2] - confidances[1];
         alpha = arbitration_fun(c_h,c_r);
         alpha = 0;
-
-        cout<<"alpha: "<<alpha<<endl;
+        my_data<<c_h<<" "<<c_r<<" "<<alpha<<" ";
+//        cout<<"alpha: "<<alpha<<endl;
         for (int i = 0; i < DIM; ++i) {
             force_robot[i] = force_dmp[i] * M_D[i];
             force_total[i] = alpha * force_robot[i] + (1-alpha) * force_human[i];
@@ -293,23 +336,24 @@ int main(int argc, char **argv){
             plan_state.positions[i] = plan_state.positions[i] + plan_state.velocities[i] * DT;
             targetFrame.p.data[i] = plan_state.positions[i];
         }
-        cout<<"force_robot: "<<force_robot[0]<<" , "<<force_robot[1]<<endl;
-        cout<<"force_human: "<<force_human[0]<<" , "<<force_human[1]<<endl;
-
-        cout<<"plan_state.positions: "<<plan_state.positions[0]<<" , "<<plan_state.positions[1]<<endl;
+        my_data<<force_total[0]<<" "<<force_total[1]<<" "<<endl;
+//        cout<<"force_robot: "<<force_robot[0]<<" , "<<force_robot[1]<<endl;
+//        cout<<"force_human: "<<force_human[0]<<" , "<<force_human[1]<<endl;
+//        cout<<"plan_state.positions: "<<plan_state.positions[0]<<" , "<<plan_state.positions[1]<<endl;
 
         myController.moveToFrame(targetFrame,DT, false);
 
         Visualize( pathPub, targetFrame.p.data);
         statePub.publish(plan_state);
-        // publish
-        prob.header.stamp = ros::Time::now();
-        prob.point.x = confidances[0];
-        prob.point.y = confidances[1];
-        prob.point.z = confidances[2];
-        probPub.publish(prob);
+        if(at_goal){
+            plan_state.velocities[0] = 0;
+            plan_state.velocities[1] = 0;
+            statePub.publish(plan_state);
+            break;
+        }
         rate.sleep();
     }
+    my_data.close();
 
     // Delete pointer
 //    for (int i = 0; i < N_LIBS; ++i) {
