@@ -16,7 +16,7 @@
 using namespace std;
 
 const int HZ = 125;
-const bool UseSim = false;
+const bool UseSim = true;
 
 int main(int argc, char **argv)
 {
@@ -38,9 +38,9 @@ int main(int argc, char **argv)
     // trajectory information
     std::vector<double> x_0; x_0.push_back(0.5); x_0.push_back(-0.2);
 
-//    std::vector<double> goal; goal.push_back(0.44); goal.push_back(-0.38);
+    std::vector<double> goal; goal.push_back(0.44); goal.push_back(-0.38);
 //    std::vector<double> goal; goal.push_back(0.8); goal.push_back(-1.2);
-    std::vector<double> goal; goal.push_back(0.6); goal.push_back(-0.38);
+//    std::vector<double> goal; goal.push_back(0.6); goal.push_back(-0.38);
 
     visualization_msgs::Marker marker;
     marker.id = 0;

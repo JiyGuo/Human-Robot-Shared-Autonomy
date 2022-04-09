@@ -1780,4 +1780,6 @@ dmp/CMakeFiles/arbitration_test.dir/nodes/arbitration.cpp.o: \
  /home/jiyguo/ur_ws/src/dmp/include/dmp/radial_approx.h \
  /home/jiyguo/ur_ws/src/dmp/include/dmp/function_approx.h \
  /usr/include/eigen3/Eigen/SVD /usr/include/eigen3/Eigen/LU \
- /usr/include/tinyxml2.h
+ /usr/include/tinyxml2.h \
+ /opt/ros/noetic/include/visualization_msgs/Marker.h \
+ /opt/ros/noetic/include/std_msgs/ColorRGBA.h

@@ -1945,7 +1945,9 @@ dmp/CMakeFiles/arbitration_test.dir/nodes/arbitration.cpp.o: ../dmp/nodes/arbitr
   ../dmp/include/dmp/function_approx.h \
   /usr/include/eigen3/Eigen/SVD \
   /usr/include/eigen3/Eigen/LU \
-  /usr/include/tinyxml2.h
+  /usr/include/tinyxml2.h \
+  /opt/ros/noetic/include/visualization_msgs/Marker.h \
+  /opt/ros/noetic/include/std_msgs/ColorRGBA.h
 
 dmp/CMakeFiles/arbitration_test.dir/src/dtw.cpp.o: ../dmp/src/dtw.cpp \
   /usr/include/stdc-predef.h \
@@ -3443,6 +3445,8 @@ dmp/CMakeFiles/arbitration_test.dir/src/my_dmp.cpp.o: ../dmp/src/my_dmp.cpp \
 
 ../dmp/src/dtw.cpp:
 
+/opt/ros/noetic/include/visualization_msgs/Marker.h:
+
 /home/jiyguo/ur_ws/devel/include/dmp/DMPTraj.h:
 
 /home/jiyguo/ur_ws/devel/include/dmp/DMPData.h:
@@ -3870,6 +3874,8 @@ dmp/CMakeFiles/arbitration_test.dir/src/my_dmp.cpp.o: ../dmp/src/my_dmp.cpp \
 /usr/include/boost/preprocessor/list/detail/fold_left.hpp:
 
 /usr/include/boost/shared_ptr.hpp:
+
+/opt/ros/noetic/include/std_msgs/ColorRGBA.h:
 
 /usr/include/c++/9/bits/list.tcc:
 

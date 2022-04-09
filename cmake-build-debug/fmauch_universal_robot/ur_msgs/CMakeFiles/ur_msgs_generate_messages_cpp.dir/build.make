@@ -91,8 +91,8 @@ devel/include/ur_msgs/Digital.h: /opt/ros/noetic/share/gencpp/msg.h.template
 
 devel/include/ur_msgs/IOStates.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 devel/include/ur_msgs/IOStates.h: ../fmauch_universal_robot/ur_msgs/msg/IOStates.msg
-devel/include/ur_msgs/IOStates.h: ../fmauch_universal_robot/ur_msgs/msg/Digital.msg
 devel/include/ur_msgs/IOStates.h: ../fmauch_universal_robot/ur_msgs/msg/Analog.msg
+devel/include/ur_msgs/IOStates.h: ../fmauch_universal_robot/ur_msgs/msg/Digital.msg
 devel/include/ur_msgs/IOStates.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiyguo/ur_ws/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from ur_msgs/IOStates.msg"
 	cd /home/jiyguo/ur_ws/src/fmauch_universal_robot/ur_msgs && /home/jiyguo/ur_ws/src/cmake-build-debug/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jiyguo/ur_ws/src/fmauch_universal_robot/ur_msgs/msg/IOStates.msg -Iur_msgs:/home/jiyguo/ur_ws/src/fmauch_universal_robot/ur_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p ur_msgs -o /home/jiyguo/ur_ws/src/cmake-build-debug/devel/include/ur_msgs -e /opt/ros/noetic/share/gencpp/cmake/..

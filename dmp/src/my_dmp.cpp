@@ -258,7 +258,6 @@ namespace myDmp {
         plan.positions.clear();
         plan.velocities.clear();
         bool at_goal = false;
-
         double f_eval;
         //Plan in each dimension
         double v_dot;
@@ -291,9 +290,11 @@ namespace myDmp {
             //Update v dot and x dot based on DMP differential equations
             v_dot = (_dmp_list[i].k_gain*((_goal[i]-x) - (_goal[i]-_x_0[i])*s + f_eval) - _dmp_list[i].d_gain*v) / _tau ;
 //                std::cout<<"v_dots: "<<v_dot<<std::endl;
+
             if(if_couple){
                 v_dot += couple_term[i];
             }
+
             x_dot = v/_tau ;
 
             //Update state variables
@@ -303,6 +304,7 @@ namespace myDmp {
             plan.positions.push_back(x);
             plan.velocities.push_back(v/_tau);
         }
+
 
         //If plan is at least minimum length, check to see if we are close enough to goal
         if(cur_t >= _tau){
@@ -329,7 +331,7 @@ namespace myDmp {
             throw ;
         }
         force_dmp.resize(_dims);
-        bool at_goal = false;
+        bool at_goal = true;
         double f_eval;
         double x;
         //Compute the phase and the log of the phase to assist with some numerical issues
@@ -368,13 +370,11 @@ namespace myDmp {
         }
 
         //If plan is at least minimum length, check to see if we are close enough to goal
-        if(cur_t >= _tau){
-            at_goal = true;
-            for(int i=0; i<_dims; i++){
-                if(_goal_thresh[i] > 0){
-                    if(fabs(cur_state.positions[i] - _goal[i]) > _goal_thresh[i])
-                        at_goal = false;
-                }
+
+        for(int i=0; i<_dims; i++){
+            if(_goal_thresh[i] > 0){
+                if(fabs(cur_state.positions[i] - _goal[i]) > _goal_thresh[i])
+                    at_goal = false;
             }
         }
 //        ROS_INFO("~~~~~~~ AFTER at_goal ~~~~~~~");

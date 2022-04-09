@@ -89,8 +89,8 @@ devel/share/common-lisp/ros/ur_msgs/msg/Digital.lisp: ../fmauch_universal_robot/
 
 devel/share/common-lisp/ros/ur_msgs/msg/IOStates.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 devel/share/common-lisp/ros/ur_msgs/msg/IOStates.lisp: ../fmauch_universal_robot/ur_msgs/msg/IOStates.msg
-devel/share/common-lisp/ros/ur_msgs/msg/IOStates.lisp: ../fmauch_universal_robot/ur_msgs/msg/Digital.msg
 devel/share/common-lisp/ros/ur_msgs/msg/IOStates.lisp: ../fmauch_universal_robot/ur_msgs/msg/Analog.msg
+devel/share/common-lisp/ros/ur_msgs/msg/IOStates.lisp: ../fmauch_universal_robot/ur_msgs/msg/Digital.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiyguo/ur_ws/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from ur_msgs/IOStates.msg"
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug/fmauch_universal_robot/ur_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/jiyguo/ur_ws/src/fmauch_universal_robot/ur_msgs/msg/IOStates.msg -Iur_msgs:/home/jiyguo/ur_ws/src/fmauch_universal_robot/ur_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p ur_msgs -o /home/jiyguo/ur_ws/src/cmake-build-debug/devel/share/common-lisp/ros/ur_msgs/msg
 

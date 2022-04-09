@@ -67,7 +67,7 @@ include fmauch_universal_robot/ur_msgs/CMakeFiles/_ur_msgs_generate_messages_che
 include fmauch_universal_robot/ur_msgs/CMakeFiles/_ur_msgs_generate_messages_check_deps_IOStates.dir/progress.make
 
 fmauch_universal_robot/ur_msgs/CMakeFiles/_ur_msgs_generate_messages_check_deps_IOStates:
-	cd /home/jiyguo/ur_ws/src/cmake-build-debug/fmauch_universal_robot/ur_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py ur_msgs /home/jiyguo/ur_ws/src/fmauch_universal_robot/ur_msgs/msg/IOStates.msg ur_msgs/Digital:ur_msgs/Analog
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug/fmauch_universal_robot/ur_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py ur_msgs /home/jiyguo/ur_ws/src/fmauch_universal_robot/ur_msgs/msg/IOStates.msg ur_msgs/Analog:ur_msgs/Digital
 
 _ur_msgs_generate_messages_check_deps_IOStates: fmauch_universal_robot/ur_msgs/CMakeFiles/_ur_msgs_generate_messages_check_deps_IOStates
 _ur_msgs_generate_messages_check_deps_IOStates: fmauch_universal_robot/ur_msgs/CMakeFiles/_ur_msgs_generate_messages_check_deps_IOStates.dir/build.make

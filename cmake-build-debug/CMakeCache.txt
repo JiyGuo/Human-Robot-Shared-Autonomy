@@ -1288,6 +1288,9 @@ ur_gazebo_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 ur_gazebo_SOURCE_DIR:STATIC=/home/jiyguo/ur_ws/src/fmauch_universal_robot/ur_gazebo
 
+//Dependencies for the target
+ur_hardware_interface_LIB_DEPENDS:STATIC=general;/opt/ros/noetic/lib/libcontroller_manager.so;general;/opt/ros/noetic/lib/libclass_loader.so;general;/usr/lib/x86_64-linux-gnu/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/noetic/lib/libroslib.so;general;/opt/ros/noetic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython3.8.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/noetic/lib/libtf.so;general;/opt/ros/noetic/lib/libtf2_ros.so;general;/opt/ros/noetic/lib/libactionlib.so;general;/opt/ros/noetic/lib/libmessage_filters.so;general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/libtf2.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
 //Value Computed by CMake
 ur_kinematics_BINARY_DIR:STATIC=/home/jiyguo/ur_ws/src/cmake-build-debug/fmauch_universal_robot/ur_kinematics
 
@@ -1296,6 +1299,15 @@ ur_kinematics_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 ur_kinematics_SOURCE_DIR:STATIC=/home/jiyguo/ur_ws/src/fmauch_universal_robot/ur_kinematics
+
+//Value Computed by CMake
+ur_modern_driver_BINARY_DIR:STATIC=/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver
+
+//Value Computed by CMake
+ur_modern_driver_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ur_modern_driver_SOURCE_DIR:STATIC=/home/jiyguo/ur_ws/src/ur_modern_driver
 
 //Value Computed by CMake
 ur_msgs_BINARY_DIR:STATIC=/home/jiyguo/ur_ws/src/cmake-build-debug/fmauch_universal_robot/ur_msgs
@@ -1329,6 +1341,15 @@ ur_robot_driver_plugin_LIB_DEPENDS:STATIC=general;ur_robot_driver;general;/opt/r
 
 //The directory containing a CMake configuration file for urdf.
 urdf_DIR:PATH=/opt/ros/noetic/share/urdf/cmake
+
+//Value Computed by CMake
+uu_robot_BINARY_DIR:STATIC=/home/jiyguo/ur_ws/src/cmake-build-debug/uu_robot
+
+//Value Computed by CMake
+uu_robot_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+uu_robot_SOURCE_DIR:STATIC=/home/jiyguo/ur_ws/src/uu_robot
 
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/noetic/share/visualization_msgs/cmake
@@ -1526,7 +1547,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=30
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=32
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

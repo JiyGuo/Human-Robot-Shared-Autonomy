@@ -91,8 +91,8 @@ devel/lib/python3/dist-packages/ur_msgs/msg/_Digital.py: ../fmauch_universal_rob
 
 devel/lib/python3/dist-packages/ur_msgs/msg/_IOStates.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 devel/lib/python3/dist-packages/ur_msgs/msg/_IOStates.py: ../fmauch_universal_robot/ur_msgs/msg/IOStates.msg
-devel/lib/python3/dist-packages/ur_msgs/msg/_IOStates.py: ../fmauch_universal_robot/ur_msgs/msg/Digital.msg
 devel/lib/python3/dist-packages/ur_msgs/msg/_IOStates.py: ../fmauch_universal_robot/ur_msgs/msg/Analog.msg
+devel/lib/python3/dist-packages/ur_msgs/msg/_IOStates.py: ../fmauch_universal_robot/ur_msgs/msg/Digital.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jiyguo/ur_ws/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG ur_msgs/IOStates"
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug/fmauch_universal_robot/ur_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/jiyguo/ur_ws/src/fmauch_universal_robot/ur_msgs/msg/IOStates.msg -Iur_msgs:/home/jiyguo/ur_ws/src/fmauch_universal_robot/ur_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p ur_msgs -o /home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/python3/dist-packages/ur_msgs/msg
 

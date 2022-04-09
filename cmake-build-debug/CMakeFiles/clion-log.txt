@@ -1,7 +1,7 @@
 /home/jiyguo/clion-2021.3.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jiyguo/ur_ws/src
 -- Using CATKIN_DEVEL_PREFIX: /home/jiyguo/ur_ws/src/cmake-build-debug/devel
--- Using CMAKE_PREFIX_PATH: /home/jiyguo/ur_ws/devel;/opt/ros/noetic
--- This workspace overlays: /home/jiyguo/ur_ws/devel;/opt/ros/noetic
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
 -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
 -- Using PYTHON_EXECUTABLE: /usr/bin/python3
 -- Using Debian Python package layout
@@ -41,8 +41,9 @@ CMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:56 (c
 -- catkin 0.8.10
 -- BUILD_SHARED_LIBS is on
 -- BUILD_SHARED_LIBS is on
+WARNING: Package 'ur_modern_driver' is deprecated (This package has been deprecated. Users of CB3 and e-Series controllers should migrate to ur_robot_driver.)
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
--- ~~  traversing 26 packages in topological order:
+-- ~~  traversing 28 packages in topological order:
 -- ~~  - universal_robot (metapackage)
 -- ~~  - universal_robots (metapackage)
 -- ~~  - ur_dashboard_msgs
@@ -51,13 +52,15 @@ CMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:56 (c
 -- ~~  - ur_msgs
 -- ~~  - dmp
 -- ~~  - gmm
--- ~~  - robot_kin
 -- ~~  - socket
 -- ~~  - controller_stopper
 -- ~~  - ur_bringup
 -- ~~  - ur_driver
 -- ~~  - ur_e_gazebo
 -- ~~  - ur_gazebo
+-- ~~  - ur_modern_driver
+-- ~~  - robot_kin
+-- ~~  - uu_robot
 -- ~~  - my_controller
 -- ~~  - ur10_e_moveit_config
 -- ~~  - ur10_moveit_config
@@ -184,16 +187,6 @@ Call Stack (most recent call first):
 
 -- Eigen found (include: /usr/include/eigen3)
 -- gmm: 0 messages, 1 services
--- +++ processing catkin package: 'robot_kin'
--- ==> add_subdirectory(robot_kin)
-CMake Deprecation Warning at robot_kin/CMakeLists.txt:1 (cmake_minimum_required):
-  Compatibility with CMake < 2.8.12 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-
-
 -- +++ processing catkin package: 'socket'
 -- ==> add_subdirectory(socket)
 -- +++ processing catkin package: 'controller_stopper'
@@ -246,6 +239,39 @@ CMake Deprecation Warning at fmauch_universal_robot/ur_gazebo/CMakeLists.txt:1 (
   CMake that the project does not need compatibility with older versions.
 
 
+-- +++ processing catkin package: 'ur_modern_driver'
+-- ==> add_subdirectory(ur_modern_driver)
+CMake Deprecation Warning at ur_modern_driver/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+CMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'ur_hardware_interface' but neither
+  'ur_hardware_interface_INCLUDE_DIRS' nor 'ur_hardware_interface_LIBRARIES'
+  is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  ur_modern_driver/CMakeLists.txt:110 (catkin_package)
+
+
+-- +++ processing catkin package: 'robot_kin'
+-- ==> add_subdirectory(robot_kin)
+CMake Deprecation Warning at robot_kin/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- +++ processing catkin package: 'uu_robot'
+-- ==> add_subdirectory(uu_robot)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
 -- +++ processing catkin package: 'my_controller'
 -- ==> add_subdirectory(my_controller)
 -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy

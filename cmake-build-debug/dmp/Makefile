@@ -172,6 +172,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+dmp/CMakeFiles/traj_ur.dir/rule:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dmp/CMakeFiles/traj_ur.dir/rule
+.PHONY : dmp/CMakeFiles/traj_ur.dir/rule
+
+# Convenience name for target.
+traj_ur: dmp/CMakeFiles/traj_ur.dir/rule
+.PHONY : traj_ur
+
+# fast build rule for target.
+traj_ur/fast:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/traj_ur.dir/build.make dmp/CMakeFiles/traj_ur.dir/build
+.PHONY : traj_ur/fast
+
+# Convenience name for target.
 dmp/CMakeFiles/arbitration_test.dir/rule:
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dmp/CMakeFiles/arbitration_test.dir/rule
 .PHONY : dmp/CMakeFiles/arbitration_test.dir/rule
@@ -198,6 +212,34 @@ my_dmp_test: dmp/CMakeFiles/my_dmp_test.dir/rule
 my_dmp_test/fast:
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/my_dmp_test.dir/build.make dmp/CMakeFiles/my_dmp_test.dir/build
 .PHONY : my_dmp_test/fast
+
+# Convenience name for target.
+dmp/CMakeFiles/traj_ur_wsc.dir/rule:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dmp/CMakeFiles/traj_ur_wsc.dir/rule
+.PHONY : dmp/CMakeFiles/traj_ur_wsc.dir/rule
+
+# Convenience name for target.
+traj_ur_wsc: dmp/CMakeFiles/traj_ur_wsc.dir/rule
+.PHONY : traj_ur_wsc
+
+# fast build rule for target.
+traj_ur_wsc/fast:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/traj_ur_wsc.dir/build.make dmp/CMakeFiles/traj_ur_wsc.dir/build
+.PHONY : traj_ur_wsc/fast
+
+# Convenience name for target.
+dmp/CMakeFiles/mydmp_wsc.dir/rule:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dmp/CMakeFiles/mydmp_wsc.dir/rule
+.PHONY : dmp/CMakeFiles/mydmp_wsc.dir/rule
+
+# Convenience name for target.
+mydmp_wsc: dmp/CMakeFiles/mydmp_wsc.dir/rule
+.PHONY : mydmp_wsc
+
+# fast build rule for target.
+mydmp_wsc/fast:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/mydmp_wsc.dir/build.make dmp/CMakeFiles/mydmp_wsc.dir/build
+.PHONY : mydmp_wsc/fast
 
 # Convenience name for target.
 dmp/CMakeFiles/dmp_gennodejs.dir/rule:
@@ -1806,6 +1848,78 @@ nodes/my_dmp_test.cpp.s:
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/my_dmp_test.dir/build.make dmp/CMakeFiles/my_dmp_test.dir/nodes/my_dmp_test.cpp.s
 .PHONY : nodes/my_dmp_test.cpp.s
 
+nodes/mydmp_wsc.o: nodes/mydmp_wsc.cpp.o
+.PHONY : nodes/mydmp_wsc.o
+
+# target to build an object file
+nodes/mydmp_wsc.cpp.o:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/mydmp_wsc.dir/build.make dmp/CMakeFiles/mydmp_wsc.dir/nodes/mydmp_wsc.cpp.o
+.PHONY : nodes/mydmp_wsc.cpp.o
+
+nodes/mydmp_wsc.i: nodes/mydmp_wsc.cpp.i
+.PHONY : nodes/mydmp_wsc.i
+
+# target to preprocess a source file
+nodes/mydmp_wsc.cpp.i:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/mydmp_wsc.dir/build.make dmp/CMakeFiles/mydmp_wsc.dir/nodes/mydmp_wsc.cpp.i
+.PHONY : nodes/mydmp_wsc.cpp.i
+
+nodes/mydmp_wsc.s: nodes/mydmp_wsc.cpp.s
+.PHONY : nodes/mydmp_wsc.s
+
+# target to generate assembly for a file
+nodes/mydmp_wsc.cpp.s:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/mydmp_wsc.dir/build.make dmp/CMakeFiles/mydmp_wsc.dir/nodes/mydmp_wsc.cpp.s
+.PHONY : nodes/mydmp_wsc.cpp.s
+
+nodes/traj_ur.o: nodes/traj_ur.cpp.o
+.PHONY : nodes/traj_ur.o
+
+# target to build an object file
+nodes/traj_ur.cpp.o:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/traj_ur.dir/build.make dmp/CMakeFiles/traj_ur.dir/nodes/traj_ur.cpp.o
+.PHONY : nodes/traj_ur.cpp.o
+
+nodes/traj_ur.i: nodes/traj_ur.cpp.i
+.PHONY : nodes/traj_ur.i
+
+# target to preprocess a source file
+nodes/traj_ur.cpp.i:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/traj_ur.dir/build.make dmp/CMakeFiles/traj_ur.dir/nodes/traj_ur.cpp.i
+.PHONY : nodes/traj_ur.cpp.i
+
+nodes/traj_ur.s: nodes/traj_ur.cpp.s
+.PHONY : nodes/traj_ur.s
+
+# target to generate assembly for a file
+nodes/traj_ur.cpp.s:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/traj_ur.dir/build.make dmp/CMakeFiles/traj_ur.dir/nodes/traj_ur.cpp.s
+.PHONY : nodes/traj_ur.cpp.s
+
+nodes/traj_ur_wsc.o: nodes/traj_ur_wsc.cpp.o
+.PHONY : nodes/traj_ur_wsc.o
+
+# target to build an object file
+nodes/traj_ur_wsc.cpp.o:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/traj_ur_wsc.dir/build.make dmp/CMakeFiles/traj_ur_wsc.dir/nodes/traj_ur_wsc.cpp.o
+.PHONY : nodes/traj_ur_wsc.cpp.o
+
+nodes/traj_ur_wsc.i: nodes/traj_ur_wsc.cpp.i
+.PHONY : nodes/traj_ur_wsc.i
+
+# target to preprocess a source file
+nodes/traj_ur_wsc.cpp.i:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/traj_ur_wsc.dir/build.make dmp/CMakeFiles/traj_ur_wsc.dir/nodes/traj_ur_wsc.cpp.i
+.PHONY : nodes/traj_ur_wsc.cpp.i
+
+nodes/traj_ur_wsc.s: nodes/traj_ur_wsc.cpp.s
+.PHONY : nodes/traj_ur_wsc.s
+
+# target to generate assembly for a file
+nodes/traj_ur_wsc.cpp.s:
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/traj_ur_wsc.dir/build.make dmp/CMakeFiles/traj_ur_wsc.dir/nodes/traj_ur_wsc.cpp.s
+.PHONY : nodes/traj_ur_wsc.cpp.s
+
 src/dmp.o: src/dmp.cpp.o
 .PHONY : src/dmp.o
 
@@ -1836,6 +1950,7 @@ src/dtw.o: src/dtw.cpp.o
 # target to build an object file
 src/dtw.cpp.o:
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/arbitration_test.dir/build.make dmp/CMakeFiles/arbitration_test.dir/src/dtw.cpp.o
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/mydmp_wsc.dir/build.make dmp/CMakeFiles/mydmp_wsc.dir/src/dtw.cpp.o
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/dtw_test.dir/build.make dmp/CMakeFiles/dtw_test.dir/src/dtw.cpp.o
 .PHONY : src/dtw.cpp.o
 
@@ -1845,6 +1960,7 @@ src/dtw.i: src/dtw.cpp.i
 # target to preprocess a source file
 src/dtw.cpp.i:
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/arbitration_test.dir/build.make dmp/CMakeFiles/arbitration_test.dir/src/dtw.cpp.i
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/mydmp_wsc.dir/build.make dmp/CMakeFiles/mydmp_wsc.dir/src/dtw.cpp.i
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/dtw_test.dir/build.make dmp/CMakeFiles/dtw_test.dir/src/dtw.cpp.i
 .PHONY : src/dtw.cpp.i
 
@@ -1854,6 +1970,7 @@ src/dtw.s: src/dtw.cpp.s
 # target to generate assembly for a file
 src/dtw.cpp.s:
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/arbitration_test.dir/build.make dmp/CMakeFiles/arbitration_test.dir/src/dtw.cpp.s
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/mydmp_wsc.dir/build.make dmp/CMakeFiles/mydmp_wsc.dir/src/dtw.cpp.s
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/dtw_test.dir/build.make dmp/CMakeFiles/dtw_test.dir/src/dtw.cpp.s
 .PHONY : src/dtw.cpp.s
 
@@ -1912,6 +2029,7 @@ src/my_dmp.o: src/my_dmp.cpp.o
 src/my_dmp.cpp.o:
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/arbitration_test.dir/build.make dmp/CMakeFiles/arbitration_test.dir/src/my_dmp.cpp.o
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/my_dmp_test.dir/build.make dmp/CMakeFiles/my_dmp_test.dir/src/my_dmp.cpp.o
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/mydmp_wsc.dir/build.make dmp/CMakeFiles/mydmp_wsc.dir/src/my_dmp.cpp.o
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/dtw_test.dir/build.make dmp/CMakeFiles/dtw_test.dir/src/my_dmp.cpp.o
 .PHONY : src/my_dmp.cpp.o
 
@@ -1922,6 +2040,7 @@ src/my_dmp.i: src/my_dmp.cpp.i
 src/my_dmp.cpp.i:
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/arbitration_test.dir/build.make dmp/CMakeFiles/arbitration_test.dir/src/my_dmp.cpp.i
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/my_dmp_test.dir/build.make dmp/CMakeFiles/my_dmp_test.dir/src/my_dmp.cpp.i
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/mydmp_wsc.dir/build.make dmp/CMakeFiles/mydmp_wsc.dir/src/my_dmp.cpp.i
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/dtw_test.dir/build.make dmp/CMakeFiles/dtw_test.dir/src/my_dmp.cpp.i
 .PHONY : src/my_dmp.cpp.i
 
@@ -1932,6 +2051,7 @@ src/my_dmp.s: src/my_dmp.cpp.s
 src/my_dmp.cpp.s:
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/arbitration_test.dir/build.make dmp/CMakeFiles/arbitration_test.dir/src/my_dmp.cpp.s
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/my_dmp_test.dir/build.make dmp/CMakeFiles/my_dmp_test.dir/src/my_dmp.cpp.s
+	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/mydmp_wsc.dir/build.make dmp/CMakeFiles/mydmp_wsc.dir/src/my_dmp.cpp.s
 	cd /home/jiyguo/ur_ws/src/cmake-build-debug && $(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/dtw_test.dir/build.make dmp/CMakeFiles/dtw_test.dir/src/my_dmp.cpp.s
 .PHONY : src/my_dmp.cpp.s
 
@@ -2080,6 +2200,9 @@ help:
 	@echo "... dmp_with_wsc"
 	@echo "... dtw_test"
 	@echo "... my_dmp_test"
+	@echo "... mydmp_wsc"
+	@echo "... traj_ur"
+	@echo "... traj_ur_wsc"
 	@echo "... __/my_controller/src/robotController/robotController.o"
 	@echo "... __/my_controller/src/robotController/robotController.i"
 	@echo "... __/my_controller/src/robotController/robotController.s"
@@ -2095,6 +2218,15 @@ help:
 	@echo "... nodes/my_dmp_test.o"
 	@echo "... nodes/my_dmp_test.i"
 	@echo "... nodes/my_dmp_test.s"
+	@echo "... nodes/mydmp_wsc.o"
+	@echo "... nodes/mydmp_wsc.i"
+	@echo "... nodes/mydmp_wsc.s"
+	@echo "... nodes/traj_ur.o"
+	@echo "... nodes/traj_ur.i"
+	@echo "... nodes/traj_ur.s"
+	@echo "... nodes/traj_ur_wsc.o"
+	@echo "... nodes/traj_ur_wsc.i"
+	@echo "... nodes/traj_ur_wsc.s"
 	@echo "... src/dmp.o"
 	@echo "... src/dmp.i"
 	@echo "... src/dmp.s"

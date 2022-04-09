@@ -1947,6 +1947,8 @@ dmp/CMakeFiles/arbitration_test.dir/nodes/arbitration.cpp.o
  /usr/include/eigen3/Eigen/SVD
  /usr/include/eigen3/Eigen/LU
  /usr/include/tinyxml2.h
+ /opt/ros/noetic/include/visualization_msgs/Marker.h
+ /opt/ros/noetic/include/std_msgs/ColorRGBA.h
 
 dmp/CMakeFiles/arbitration_test.dir/src/dtw.cpp.o
  /home/jiyguo/ur_ws/src/dmp/src/dtw.cpp

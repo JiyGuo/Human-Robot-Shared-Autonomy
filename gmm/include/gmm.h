@@ -51,8 +51,8 @@ namespace WSC{
   void PrintVec(const Eigen::VectorXd& vec) ;
   void PrintMat(const Eigen::MatrixXd& mat) ; 
 
-  const double LB = 0.15;
-  const double UB = 0.045;
+  const double LB = 0.03;
+  const double UB = 0.008;
   const double ALPHA = 80;
   const double MAX_APT = 10;
 

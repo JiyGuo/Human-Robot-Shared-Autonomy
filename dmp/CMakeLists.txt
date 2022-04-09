@@ -103,6 +103,13 @@ target_link_libraries(controller  ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${Eigen
 #
 add_executable(dmp_with_wsc nodes/dmp_with_wsc.cpp  ../my_controller/src/robotController/robotController.cpp)
 target_link_libraries(dmp_with_wsc ${catkin_LIBRARIES} ${Boost_LIBRARIES} orocos-kdl robot_kin tinyxml2 dmp)
+
+add_executable(mydmp_wsc nodes/mydmp_wsc.cpp src/dtw.cpp src/my_dmp.cpp)
+target_link_libraries(mydmp_wsc controller dmp)
+
+add_executable(traj_ur_wsc nodes/traj_ur_wsc.cpp)
+target_link_libraries(traj_ur_wsc controller)
+
 #
 #add_executable(classify_test nodes/classify_test.cpp src/confidance.cpp)
 #target_link_libraries(classify_test ${catkin_LIBRARIES} ${Eigen_LIBRARIES} tinyxml2)
@@ -118,6 +125,9 @@ target_link_libraries(my_dmp_test dmp controller)
 
 add_executable(arbitration_test nodes/arbitration.cpp src/dtw.cpp src/my_dmp.cpp)
 target_link_libraries(arbitration_test controller dmp)
+
+add_executable(traj_ur nodes/traj_ur.cpp)
+target_link_libraries(traj_ur controller)
 
 #add_executable(classify nodes/classify.cpp src/dtw.cpp src/my_dmp.cpp)
 #target_link_libraries(classify ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${Eigen_LIBRARIES} dmp)

@@ -11,5 +11,5 @@ export CMAKE_PREFIX_PATH="/home/jiyguo/ur_ws/src/cmake-build-debug/devel:$CMAKE_
 export LD_LIBRARY_PATH="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PYTHONPATH="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROSLISP_PACKAGE_DIRECTORIES='/home/jiyguo/ur_ws/src/cmake-build-debug/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/jiyguo/ur_ws/src:$ROS_PACKAGE_PATH"

@@ -5,7 +5,7 @@
 		<Option title="Project"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\opt\;CMake Files\..\..\..\..\opt\ros\;CMake Files\..\..\..\..\opt\ros\noetic\;CMake Files\..\..\..\..\opt\ros\noetic\share\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\cmake\platform\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\cmake\test\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\cmake\tools\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\cmake\templates\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\cmake\em\;CMake Files\..\..\..\..\opt\ros\noetic\share\actionlib_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\actionlib_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\message_runtime\;CMake Files\..\..\..\..\opt\ros\noetic\share\message_runtime\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\cpp_common\;CMake Files\..\..\..\..\opt\ros\noetic\share\cpp_common\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\roscpp_serialization\;CMake Files\..\..\..\..\opt\ros\noetic\share\roscpp_serialization\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\roscpp_traits\;CMake Files\..\..\..\..\opt\ros\noetic\share\roscpp_traits\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rostime\;CMake Files\..\..\..\..\opt\ros\noetic\share\rostime\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\std_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\std_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\genmsg\;CMake Files\..\..\..\..\opt\ros\noetic\share\genmsg\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\gencpp\;CMake Files\..\..\..\..\opt\ros\noetic\share\gencpp\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\geneus\;CMake Files\..\..\..\..\opt\ros\noetic\share\geneus\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\genlisp\;CMake Files\..\..\..\..\opt\ros\noetic\share\genlisp\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\gennodejs\;CMake Files\..\..\..\..\opt\ros\noetic\share\gennodejs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\genpy\;CMake Files\..\..\..\..\opt\ros\noetic\share\genpy\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\message_generation\;CMake Files\..\..\..\..\opt\ros\noetic\share\message_generation\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\geometry_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\geometry_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\cmake_modules\;CMake Files\..\..\..\..\opt\ros\noetic\share\cmake_modules\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\cmake_modules\cmake\Modules\;CMake Files\..\..\..\..\opt\ros\noetic\share\roscpp\;CMake Files\..\..\..\..\opt\ros\noetic\share\roscpp\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosconsole\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosconsole\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosgraph_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosgraph_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\xmlrpcpp\;CMake Files\..\..\..\..\opt\ros\noetic\share\xmlrpcpp\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rospy\;CMake Files\..\..\..\..\opt\ros\noetic\share\rospy\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\actionlib\;CMake Files\..\..\..\..\opt\ros\noetic\share\actionlib\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\sensor_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\sensor_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\control_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\control_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\trajectory_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\trajectory_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_core\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_core\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\eigen_stl_containers\;CMake Files\..\..\..\..\opt\ros\noetic\share\eigen_stl_containers\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\geometric_shapes\;CMake Files\..\..\..\..\opt\ros\noetic\share\geometric_shapes\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\random_numbers\;CMake Files\..\..\..\..\opt\ros\noetic\share\random_numbers\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\shape_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\shape_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\visualization_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\visualization_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\kdl_parser\;CMake Files\..\..\..\..\opt\ros\noetic\share\kdl_parser\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\urdf\;CMake Files\..\..\..\..\opt\ros\noetic\share\urdf\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\pluginlib\;CMake Files\..\..\..\..\opt\ros\noetic\share\pluginlib\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\class_loader\;CMake Files\..\..\..\..\opt\ros\noetic\share\class_loader\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\roslib\;CMake Files\..\..\..\..\opt\ros\noetic\share\roslib\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rospack\;CMake Files\..\..\..\..\opt\ros\noetic\share\rospack\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosconsole_bridge\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosconsole_bridge\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\object_recognition_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\object_recognition_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\octomap_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\octomap_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\srdfdom\;CMake Files\..\..\..\..\opt\ros\noetic\share\srdfdom\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_eigen\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_eigen\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_geometry_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_geometry_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_ros\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_ros\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\message_filters\;CMake Files\..\..\..\..\opt\ros\noetic\share\message_filters\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosgraph\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosgraph\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_py\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_py\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_planning_interface\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_planning_interface\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_planning\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_planning\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\dynamic_reconfigure\;CMake Files\..\..\..\..\opt\ros\noetic\share\dynamic_reconfigure\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_occupancy_map_monitor\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_occupancy_map_monitor\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_warehouse\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_warehouse\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\warehouse_ros\;CMake Files\..\..\..\..\opt\ros\noetic\share\warehouse_ros\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_manipulation\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_manipulation\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_move_group\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_move_group\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\std_srvs\;CMake Files\..\..\..\..\opt\ros\noetic\share\std_srvs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_visual_tools\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_visual_tools\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rviz_visual_tools\;CMake Files\..\..\..\..\opt\ros\noetic\share\rviz_visual_tools\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\graph_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\graph_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\interactive_markers\;CMake Files\..\..\..\..\opt\ros\noetic\share\interactive_markers\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\controller_manager_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\controller_manager_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\roslaunch\;CMake Files\..\..\..\..\opt\ros\noetic\share\roslaunch\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\cv_bridge\;CMake Files\..\..\..\..\opt\ros\noetic\share\cv_bridge\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\image_transport\;CMake Files\..\..\..\..\opt\ros\noetic\share\image_transport\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\pcl_ros\;CMake Files\..\..\..\..\opt\ros\noetic\share\pcl_ros\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\nodelet\;CMake Files\..\..\..\..\opt\ros\noetic\share\nodelet\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\bondcpp\;CMake Files\..\..\..\..\opt\ros\noetic\share\bondcpp\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\bond\;CMake Files\..\..\..\..\opt\ros\noetic\share\bond\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\smclib\;CMake Files\..\..\..\..\opt\ros\noetic\share\smclib\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\nodelet_topic_tools\;CMake Files\..\..\..\..\opt\ros\noetic\share\nodelet_topic_tools\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\pcl_conversions\;CMake Files\..\..\..\..\opt\ros\noetic\share\pcl_conversions\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\pcl_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\pcl_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosbag\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosbag\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosbag_storage\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosbag_storage\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\roslz4\;CMake Files\..\..\..\..\opt\ros\noetic\share\roslz4\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\topic_tools\;CMake Files\..\..\..\..\opt\ros\noetic\share\topic_tools\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\move_base_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\move_base_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\controller_interface\;CMake Files\..\..\..\..\opt\ros\noetic\share\controller_interface\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\hardware_interface\;CMake Files\..\..\..\..\opt\ros\noetic\share\hardware_interface\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\joint_trajectory_controller\;CMake Files\..\..\..\..\opt\ros\noetic\share\joint_trajectory_controller\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\angles\;CMake Files\..\..\..\..\opt\ros\noetic\share\angles\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\control_toolbox\;CMake Files\..\..\..\..\opt\ros\noetic\share\control_toolbox\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\realtime_tools\;CMake Files\..\..\..\..\opt\ros\noetic\share\realtime_tools\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_kinematics\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_kinematics\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf_conversions\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf_conversions\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\kdl_conversions\;CMake Files\..\..\..\..\opt\ros\noetic\share\kdl_conversions\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\controller_manager\;CMake Files\..\..\..\..\opt\ros\noetic\share\controller_manager\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\industrial_robot_status_interface\;CMake Files\..\..\..\..\opt\ros\noetic\share\industrial_robot_status_interface\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rostest\;CMake Files\..\..\..\..\opt\ros\noetic\share\rostest\cmake\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\python3\;CMake Files\..\..\..\..\usr\lib\python3\dist-packages\;CMake Files\..\..\..\..\usr\lib\python3\dist-packages\catkin_pkg\;CMake Files\..\..\..\..\usr\lib\python3\dist-packages\catkin_pkg\templates\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\opencv4\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\Modules\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\yaml-cpp\;CMake Files\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\;CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\;CMake Files\..\..\..\..\usr\lib\cmake\eigen3\;CMake Files\..\..\..\..\usr\src\;CMake Files\..\..\..\..\usr\src\googletest\;CMake Files\..\..\..\..\usr\src\googletest\googlemock\;CMake Files\..\..\..\..\usr\src\googletest\googletest\;CMake Files\..\..\..\..\usr\src\googletest\googletest\cmake\;CMake Files\..\..\..\..\usr\share\;CMake Files\..\..\..\..\usr\share\orocos_kdl\;CMake Files\..\..\..\..\usr\share\orocos_kdl\cmake\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\catkin\;CMake Files\cmake-build-debug\catkin\catkin_generated\;CMake Files\cmake-build-debug\catkin\catkin_generated\version\;CMake Files\cmake-build-debug\catkin_generated\;CMake Files\cmake-build-debug\catkin_generated\installspace\;CMake Files\cmake-build-debug\fmauch_universal_robot\;CMake Files\cmake-build-debug\fmauch_universal_robot\universal_robot\;CMake Files\cmake-build-debug\fmauch_universal_robot\universal_robot\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\universal_robots\;CMake Files\cmake-build-debug\fmauch_universal_robot\universal_robots\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_description\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_description\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_e_description\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_e_description\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_msgs\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_msgs\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_msgs\cmake\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_bringup\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_bringup\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_driver\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_driver\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_e_gazebo\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_e_gazebo\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_gazebo\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_gazebo\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur10_e_moveit_config\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur10_e_moveit_config\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur10_moveit_config\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur10_moveit_config\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur3_e_moveit_config\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur3_e_moveit_config\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur3_moveit_config\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur3_moveit_config\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur5_e_moveit_config\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur5_e_moveit_config\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur5_moveit_config\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur5_moveit_config\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_kinematics\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_kinematics\catkin_generated\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_dashboard_msgs\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_dashboard_msgs\catkin_generated\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_dashboard_msgs\cmake\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\controller_stopper\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\controller_stopper\catkin_generated\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_controllers\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_controllers\catkin_generated\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_robot_driver\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_robot_driver\catkin_generated\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_calibration\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_calibration\catkin_generated\;CMake Files\cmake-build-debug\devel\;CMake Files\cmake-build-debug\devel\share\;CMake Files\cmake-build-debug\devel\share\ur_dashboard_msgs\;CMake Files\cmake-build-debug\devel\share\ur_dashboard_msgs\cmake\;CMake Files\cmake-build-debug\devel\share\ur_msgs\;CMake Files\cmake-build-debug\devel\share\ur_msgs\cmake\;CMake Files\cmake-build-debug\devel\share\dmp\;CMake Files\cmake-build-debug\devel\share\dmp\cmake\;CMake Files\cmake-build-debug\devel\share\gmm\;CMake Files\cmake-build-debug\devel\share\gmm\cmake\;CMake Files\cmake-build-debug\devel\share\ur_controllers\;CMake Files\cmake-build-debug\devel\share\ur_controllers\cmake\;CMake Files\cmake-build-debug\devel\share\ur_robot_driver\;CMake Files\cmake-build-debug\devel\share\ur_robot_driver\cmake\;CMake Files\cmake-build-debug\dmp\;CMake Files\cmake-build-debug\dmp\catkin_generated\;CMake Files\cmake-build-debug\dmp\cmake\;CMake Files\cmake-build-debug\gmm\;CMake Files\cmake-build-debug\gmm\catkin_generated\;CMake Files\cmake-build-debug\gmm\cmake\;CMake Files\cmake-build-debug\robot_kin\;CMake Files\cmake-build-debug\robot_kin\catkin_generated\;CMake Files\cmake-build-debug\socket\;CMake Files\cmake-build-debug\socket\catkin_generated\;CMake Files\cmake-build-debug\my_controller\;CMake Files\cmake-build-debug\my_controller\catkin_generated\;CMake Files\fmauch_universal_robot\;CMake Files\fmauch_universal_robot\universal_robot\;CMake Files\fmauch_universal_robot\universal_robots\;CMake Files\fmauch_universal_robot\ur_description\;CMake Files\fmauch_universal_robot\ur_e_description\;CMake Files\fmauch_universal_robot\ur_msgs\;CMake Files\fmauch_universal_robot\ur_bringup\;CMake Files\fmauch_universal_robot\ur_driver\;CMake Files\fmauch_universal_robot\ur_e_gazebo\;CMake Files\fmauch_universal_robot\ur_gazebo\;CMake Files\fmauch_universal_robot\ur10_e_moveit_config\;CMake Files\fmauch_universal_robot\ur10_moveit_config\;CMake Files\fmauch_universal_robot\ur3_e_moveit_config\;CMake Files\fmauch_universal_robot\ur3_moveit_config\;CMake Files\fmauch_universal_robot\ur5_e_moveit_config\;CMake Files\fmauch_universal_robot\ur5_moveit_config\;CMake Files\fmauch_universal_robot\ur_kinematics\;CMake Files\Universal_Robots_ROS_Driver\;CMake Files\Universal_Robots_ROS_Driver\ur_dashboard_msgs\;CMake Files\Universal_Robots_ROS_Driver\ur_dashboard_msgs\action\;CMake Files\Universal_Robots_ROS_Driver\controller_stopper\;CMake Files\Universal_Robots_ROS_Driver\ur_controllers\;CMake Files\Universal_Robots_ROS_Driver\ur_robot_driver\;CMake Files\Universal_Robots_ROS_Driver\ur_calibration\;CMake Files\dmp\;CMake Files\gmm\;CMake Files\robot_kin\;CMake Files\socket\;CMake Files\my_controller\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\opt\;CMake Files\..\..\..\..\opt\ros\;CMake Files\..\..\..\..\opt\ros\noetic\;CMake Files\..\..\..\..\opt\ros\noetic\share\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\cmake\platform\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\cmake\test\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\cmake\tools\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\cmake\templates\;CMake Files\..\..\..\..\opt\ros\noetic\share\catkin\cmake\em\;CMake Files\..\..\..\..\opt\ros\noetic\share\actionlib_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\actionlib_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\message_runtime\;CMake Files\..\..\..\..\opt\ros\noetic\share\message_runtime\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\cpp_common\;CMake Files\..\..\..\..\opt\ros\noetic\share\cpp_common\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\roscpp_serialization\;CMake Files\..\..\..\..\opt\ros\noetic\share\roscpp_serialization\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\roscpp_traits\;CMake Files\..\..\..\..\opt\ros\noetic\share\roscpp_traits\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rostime\;CMake Files\..\..\..\..\opt\ros\noetic\share\rostime\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\std_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\std_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\genmsg\;CMake Files\..\..\..\..\opt\ros\noetic\share\genmsg\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\gencpp\;CMake Files\..\..\..\..\opt\ros\noetic\share\gencpp\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\geneus\;CMake Files\..\..\..\..\opt\ros\noetic\share\geneus\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\genlisp\;CMake Files\..\..\..\..\opt\ros\noetic\share\genlisp\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\gennodejs\;CMake Files\..\..\..\..\opt\ros\noetic\share\gennodejs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\genpy\;CMake Files\..\..\..\..\opt\ros\noetic\share\genpy\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\message_generation\;CMake Files\..\..\..\..\opt\ros\noetic\share\message_generation\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\geometry_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\geometry_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\cmake_modules\;CMake Files\..\..\..\..\opt\ros\noetic\share\cmake_modules\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\cmake_modules\cmake\Modules\;CMake Files\..\..\..\..\opt\ros\noetic\share\roscpp\;CMake Files\..\..\..\..\opt\ros\noetic\share\roscpp\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosconsole\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosconsole\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosgraph_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosgraph_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\xmlrpcpp\;CMake Files\..\..\..\..\opt\ros\noetic\share\xmlrpcpp\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rospy\;CMake Files\..\..\..\..\opt\ros\noetic\share\rospy\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\actionlib\;CMake Files\..\..\..\..\opt\ros\noetic\share\actionlib\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\sensor_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\sensor_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\control_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\control_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\trajectory_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\trajectory_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_core\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_core\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\eigen_stl_containers\;CMake Files\..\..\..\..\opt\ros\noetic\share\eigen_stl_containers\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\geometric_shapes\;CMake Files\..\..\..\..\opt\ros\noetic\share\geometric_shapes\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\random_numbers\;CMake Files\..\..\..\..\opt\ros\noetic\share\random_numbers\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\shape_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\shape_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\visualization_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\visualization_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\kdl_parser\;CMake Files\..\..\..\..\opt\ros\noetic\share\kdl_parser\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\urdf\;CMake Files\..\..\..\..\opt\ros\noetic\share\urdf\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\pluginlib\;CMake Files\..\..\..\..\opt\ros\noetic\share\pluginlib\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\class_loader\;CMake Files\..\..\..\..\opt\ros\noetic\share\class_loader\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\roslib\;CMake Files\..\..\..\..\opt\ros\noetic\share\roslib\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rospack\;CMake Files\..\..\..\..\opt\ros\noetic\share\rospack\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosconsole_bridge\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosconsole_bridge\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\object_recognition_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\object_recognition_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\octomap_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\octomap_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\srdfdom\;CMake Files\..\..\..\..\opt\ros\noetic\share\srdfdom\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_eigen\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_eigen\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_geometry_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_geometry_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_ros\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_ros\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\message_filters\;CMake Files\..\..\..\..\opt\ros\noetic\share\message_filters\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosgraph\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosgraph\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_py\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf2_py\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_planning_interface\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_planning_interface\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_planning\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_planning\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\dynamic_reconfigure\;CMake Files\..\..\..\..\opt\ros\noetic\share\dynamic_reconfigure\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_occupancy_map_monitor\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_occupancy_map_monitor\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_warehouse\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_warehouse\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\warehouse_ros\;CMake Files\..\..\..\..\opt\ros\noetic\share\warehouse_ros\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_manipulation\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_manipulation\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_move_group\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_ros_move_group\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\std_srvs\;CMake Files\..\..\..\..\opt\ros\noetic\share\std_srvs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_visual_tools\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_visual_tools\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rviz_visual_tools\;CMake Files\..\..\..\..\opt\ros\noetic\share\rviz_visual_tools\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\graph_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\graph_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\interactive_markers\;CMake Files\..\..\..\..\opt\ros\noetic\share\interactive_markers\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\controller_manager_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\controller_manager_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\roslaunch\;CMake Files\..\..\..\..\opt\ros\noetic\share\roslaunch\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\hardware_interface\;CMake Files\..\..\..\..\opt\ros\noetic\share\hardware_interface\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\controller_manager\;CMake Files\..\..\..\..\opt\ros\noetic\share\controller_manager\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\controller_interface\;CMake Files\..\..\..\..\opt\ros\noetic\share\controller_interface\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\cv_bridge\;CMake Files\..\..\..\..\opt\ros\noetic\share\cv_bridge\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\image_transport\;CMake Files\..\..\..\..\opt\ros\noetic\share\image_transport\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\pcl_ros\;CMake Files\..\..\..\..\opt\ros\noetic\share\pcl_ros\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\nodelet\;CMake Files\..\..\..\..\opt\ros\noetic\share\nodelet\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\bondcpp\;CMake Files\..\..\..\..\opt\ros\noetic\share\bondcpp\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\bond\;CMake Files\..\..\..\..\opt\ros\noetic\share\bond\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\smclib\;CMake Files\..\..\..\..\opt\ros\noetic\share\smclib\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\nodelet_topic_tools\;CMake Files\..\..\..\..\opt\ros\noetic\share\nodelet_topic_tools\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\pcl_conversions\;CMake Files\..\..\..\..\opt\ros\noetic\share\pcl_conversions\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\pcl_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\pcl_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosbag\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosbag\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosbag_storage\;CMake Files\..\..\..\..\opt\ros\noetic\share\rosbag_storage\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\roslz4\;CMake Files\..\..\..\..\opt\ros\noetic\share\roslz4\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\topic_tools\;CMake Files\..\..\..\..\opt\ros\noetic\share\topic_tools\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\move_base_msgs\;CMake Files\..\..\..\..\opt\ros\noetic\share\move_base_msgs\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\joint_trajectory_controller\;CMake Files\..\..\..\..\opt\ros\noetic\share\joint_trajectory_controller\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\angles\;CMake Files\..\..\..\..\opt\ros\noetic\share\angles\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\control_toolbox\;CMake Files\..\..\..\..\opt\ros\noetic\share\control_toolbox\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\realtime_tools\;CMake Files\..\..\..\..\opt\ros\noetic\share\realtime_tools\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_kinematics\;CMake Files\..\..\..\..\opt\ros\noetic\share\moveit_kinematics\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf_conversions\;CMake Files\..\..\..\..\opt\ros\noetic\share\tf_conversions\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\kdl_conversions\;CMake Files\..\..\..\..\opt\ros\noetic\share\kdl_conversions\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\industrial_robot_status_interface\;CMake Files\..\..\..\..\opt\ros\noetic\share\industrial_robot_status_interface\cmake\;CMake Files\..\..\..\..\opt\ros\noetic\share\rostest\;CMake Files\..\..\..\..\opt\ros\noetic\share\rostest\cmake\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\python3\;CMake Files\..\..\..\..\usr\lib\python3\dist-packages\;CMake Files\..\..\..\..\usr\lib\python3\dist-packages\catkin_pkg\;CMake Files\..\..\..\..\usr\lib\python3\dist-packages\catkin_pkg\templates\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\opencv4\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\pcl\Modules\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\yaml-cpp\;CMake Files\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\;CMake Files\..\..\..\..\usr\lib\cmake\vtk-7.1\Modules\;CMake Files\..\..\..\..\usr\lib\cmake\eigen3\;CMake Files\..\..\..\..\usr\src\;CMake Files\..\..\..\..\usr\src\googletest\;CMake Files\..\..\..\..\usr\src\googletest\googlemock\;CMake Files\..\..\..\..\usr\src\googletest\googletest\;CMake Files\..\..\..\..\usr\src\googletest\googletest\cmake\;CMake Files\..\..\..\..\usr\share\;CMake Files\..\..\..\..\usr\share\orocos_kdl\;CMake Files\..\..\..\..\usr\share\orocos_kdl\cmake\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\catkin\;CMake Files\cmake-build-debug\catkin\catkin_generated\;CMake Files\cmake-build-debug\catkin\catkin_generated\version\;CMake Files\cmake-build-debug\catkin_generated\;CMake Files\cmake-build-debug\catkin_generated\installspace\;CMake Files\cmake-build-debug\fmauch_universal_robot\;CMake Files\cmake-build-debug\fmauch_universal_robot\universal_robot\;CMake Files\cmake-build-debug\fmauch_universal_robot\universal_robot\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\universal_robots\;CMake Files\cmake-build-debug\fmauch_universal_robot\universal_robots\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_description\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_description\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_e_description\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_e_description\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_msgs\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_msgs\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_msgs\cmake\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_bringup\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_bringup\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_driver\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_driver\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_e_gazebo\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_e_gazebo\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_gazebo\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_gazebo\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur10_e_moveit_config\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur10_e_moveit_config\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur10_moveit_config\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur10_moveit_config\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur3_e_moveit_config\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur3_e_moveit_config\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur3_moveit_config\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur3_moveit_config\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur5_e_moveit_config\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur5_e_moveit_config\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur5_moveit_config\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur5_moveit_config\catkin_generated\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_kinematics\;CMake Files\cmake-build-debug\fmauch_universal_robot\ur_kinematics\catkin_generated\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_dashboard_msgs\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_dashboard_msgs\catkin_generated\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_dashboard_msgs\cmake\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\controller_stopper\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\controller_stopper\catkin_generated\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_controllers\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_controllers\catkin_generated\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_robot_driver\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_robot_driver\catkin_generated\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_calibration\;CMake Files\cmake-build-debug\Universal_Robots_ROS_Driver\ur_calibration\catkin_generated\;CMake Files\cmake-build-debug\devel\;CMake Files\cmake-build-debug\devel\share\;CMake Files\cmake-build-debug\devel\share\ur_dashboard_msgs\;CMake Files\cmake-build-debug\devel\share\ur_dashboard_msgs\cmake\;CMake Files\cmake-build-debug\devel\share\ur_msgs\;CMake Files\cmake-build-debug\devel\share\ur_msgs\cmake\;CMake Files\cmake-build-debug\devel\share\dmp\;CMake Files\cmake-build-debug\devel\share\dmp\cmake\;CMake Files\cmake-build-debug\devel\share\gmm\;CMake Files\cmake-build-debug\devel\share\gmm\cmake\;CMake Files\cmake-build-debug\devel\share\ur_controllers\;CMake Files\cmake-build-debug\devel\share\ur_controllers\cmake\;CMake Files\cmake-build-debug\devel\share\ur_robot_driver\;CMake Files\cmake-build-debug\devel\share\ur_robot_driver\cmake\;CMake Files\cmake-build-debug\dmp\;CMake Files\cmake-build-debug\dmp\catkin_generated\;CMake Files\cmake-build-debug\dmp\cmake\;CMake Files\cmake-build-debug\gmm\;CMake Files\cmake-build-debug\gmm\catkin_generated\;CMake Files\cmake-build-debug\gmm\cmake\;CMake Files\cmake-build-debug\socket\;CMake Files\cmake-build-debug\socket\catkin_generated\;CMake Files\cmake-build-debug\ur_modern_driver\;CMake Files\cmake-build-debug\ur_modern_driver\catkin_generated\;CMake Files\cmake-build-debug\robot_kin\;CMake Files\cmake-build-debug\robot_kin\catkin_generated\;CMake Files\cmake-build-debug\uu_robot\;CMake Files\cmake-build-debug\uu_robot\catkin_generated\;CMake Files\cmake-build-debug\my_controller\;CMake Files\cmake-build-debug\my_controller\catkin_generated\;CMake Files\fmauch_universal_robot\;CMake Files\fmauch_universal_robot\universal_robot\;CMake Files\fmauch_universal_robot\universal_robots\;CMake Files\fmauch_universal_robot\ur_description\;CMake Files\fmauch_universal_robot\ur_e_description\;CMake Files\fmauch_universal_robot\ur_msgs\;CMake Files\fmauch_universal_robot\ur_bringup\;CMake Files\fmauch_universal_robot\ur_driver\;CMake Files\fmauch_universal_robot\ur_e_gazebo\;CMake Files\fmauch_universal_robot\ur_gazebo\;CMake Files\fmauch_universal_robot\ur10_e_moveit_config\;CMake Files\fmauch_universal_robot\ur10_moveit_config\;CMake Files\fmauch_universal_robot\ur3_e_moveit_config\;CMake Files\fmauch_universal_robot\ur3_moveit_config\;CMake Files\fmauch_universal_robot\ur5_e_moveit_config\;CMake Files\fmauch_universal_robot\ur5_moveit_config\;CMake Files\fmauch_universal_robot\ur_kinematics\;CMake Files\Universal_Robots_ROS_Driver\;CMake Files\Universal_Robots_ROS_Driver\ur_dashboard_msgs\;CMake Files\Universal_Robots_ROS_Driver\ur_dashboard_msgs\action\;CMake Files\Universal_Robots_ROS_Driver\controller_stopper\;CMake Files\Universal_Robots_ROS_Driver\ur_controllers\;CMake Files\Universal_Robots_ROS_Driver\ur_robot_driver\;CMake Files\Universal_Robots_ROS_Driver\ur_calibration\;CMake Files\dmp\;CMake Files\gmm\;CMake Files\socket\;CMake Files\ur_modern_driver\;CMake Files\robot_kin\;CMake Files\uu_robot\;CMake Files\my_controller\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug"/>
@@ -1025,6 +1025,82 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/fmauch_universal_robot/ur_msgs/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="traj_ur">
+				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp/traj_ur" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;dmp&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/include"/>
+					<Add directory="/home/jiyguo/tinyxml"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../../devel/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../dmp/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../gmm/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../robot_kin/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../my_controller/include"/>
+					<Add directory="/opt/ros/noetic/include"/>
+					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 traj_ur"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="traj_ur/fast">
+				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp/traj_ur" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;dmp&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/include"/>
+					<Add directory="/home/jiyguo/tinyxml"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../../devel/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../dmp/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../gmm/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../robot_kin/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../my_controller/include"/>
+					<Add directory="/opt/ros/noetic/include"/>
+					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 traj_ur/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="arbitration_test">
 				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp/arbitration_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp"/>
@@ -1172,6 +1248,158 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 my_dmp_test/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="traj_ur_wsc">
+				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp/traj_ur_wsc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;dmp&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/include"/>
+					<Add directory="/home/jiyguo/tinyxml"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../../devel/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../dmp/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../gmm/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../robot_kin/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../my_controller/include"/>
+					<Add directory="/opt/ros/noetic/include"/>
+					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 traj_ur_wsc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="traj_ur_wsc/fast">
+				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp/traj_ur_wsc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;dmp&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/include"/>
+					<Add directory="/home/jiyguo/tinyxml"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../../devel/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../dmp/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../gmm/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../robot_kin/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../my_controller/include"/>
+					<Add directory="/opt/ros/noetic/include"/>
+					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 traj_ur_wsc/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mydmp_wsc">
+				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp/mydmp_wsc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;dmp&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/include"/>
+					<Add directory="/home/jiyguo/tinyxml"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../../devel/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../dmp/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../gmm/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../robot_kin/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../my_controller/include"/>
+					<Add directory="/opt/ros/noetic/include"/>
+					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 mydmp_wsc"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mydmp_wsc/fast">
+				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp/mydmp_wsc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/dmp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;dmp&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/include"/>
+					<Add directory="/home/jiyguo/tinyxml"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../../devel/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../dmp/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../gmm/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../robot_kin/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/dmp/../my_controller/include"/>
+					<Add directory="/opt/ros/noetic/include"/>
+					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/include/OGRE"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 mydmp_wsc/fast"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/dmp/Makefile&quot;  VERBOSE=1 clean"/>
@@ -2683,70 +2911,6 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/gmm/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="robot_kin">
-				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/librobot_kin.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin"/>
-				<Option object_output="./"/>
-				<Option type="3"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DUR5_PARAMS"/>
-					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
-					<Add option="-DROS_PACKAGE_NAME=&quot;robot_kin&quot;"/>
-					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
-					<Add directory="/home/jiyguo/ur_ws/src/robot_kin/include"/>
-					<Add directory="/opt/ros/noetic/include"/>
-					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
-					<Add directory="/home/jyguo/ur_ws/devel/include"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/fmauch_universal_robot/ur_kinematics/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 robot_kin"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="robot_kin/fast">
-				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/librobot_kin.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin"/>
-				<Option object_output="./"/>
-				<Option type="3"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DUR5_PARAMS"/>
-					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
-					<Add option="-DROS_PACKAGE_NAME=&quot;robot_kin&quot;"/>
-					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
-					<Add directory="/home/jiyguo/ur_ws/src/robot_kin/include"/>
-					<Add directory="/opt/ros/noetic/include"/>
-					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
-					<Add directory="/home/jyguo/ur_ws/devel/include"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/fmauch_universal_robot/ur_kinematics/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 robot_kin/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="socket_test">
 				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/socket/socket_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/socket"/>
@@ -3129,6 +3293,190 @@
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/fmauch_universal_robot/ur_gazebo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/fmauch_universal_robot/ur_gazebo/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/fmauch_universal_robot/ur_gazebo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ur_hardware_interface">
+				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/libur_hardware_interface.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_BUILD"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;ur_modern_driver&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/jiyguo/ur_ws/src/ur_modern_driver/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/include"/>
+					<Add directory="/opt/ros/noetic/include"/>
+					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 ur_hardware_interface"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ur_hardware_interface/fast">
+				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/libur_hardware_interface.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_BUILD"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;ur_modern_driver&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/jiyguo/ur_ws/src/ur_modern_driver/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/include"/>
+					<Add directory="/opt/ros/noetic/include"/>
+					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 ur_hardware_interface/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ur_driver">
+				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/ur_modern_driver/ur_driver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/ur_modern_driver"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_BUILD"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;ur_modern_driver&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/jiyguo/ur_ws/src/ur_modern_driver/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/include"/>
+					<Add directory="/opt/ros/noetic/include"/>
+					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 ur_driver"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ur_driver/fast">
+				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/ur_modern_driver/ur_driver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/ur_modern_driver"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_BUILD"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;ur_modern_driver&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/jiyguo/ur_ws/src/ur_modern_driver/include"/>
+					<Add directory="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/include"/>
+					<Add directory="/opt/ros/noetic/include"/>
+					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 ur_driver/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="robot_kin">
+				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/librobot_kin.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUR5_PARAMS"/>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;robot_kin&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/jiyguo/ur_ws/src/robot_kin/include"/>
+					<Add directory="/opt/ros/noetic/include"/>
+					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/home/jyguo/ur_ws/devel/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/fmauch_universal_robot/ur_kinematics/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 robot_kin"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="robot_kin/fast">
+				<Option output="/home/jiyguo/ur_ws/src/cmake-build-debug/devel/lib/librobot_kin.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUR5_PARAMS"/>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;robot_kin&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/jiyguo/ur_ws/src/robot_kin/include"/>
+					<Add directory="/opt/ros/noetic/include"/>
+					<Add directory="/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/home/jyguo/ur_ws/devel/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/fmauch_universal_robot/ur_kinematics/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 robot_kin/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="move_base_msgs_generate_messages_nodejs">
@@ -5247,11 +5595,21 @@
 		<Unit filename="/home/jiyguo/ur_ws/src/dmp/nodes/my_dmp_test.cpp">
 			<Option target="my_dmp_test"/>
 		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/dmp/nodes/mydmp_wsc.cpp">
+			<Option target="mydmp_wsc"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/dmp/nodes/traj_ur.cpp">
+			<Option target="traj_ur"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/dmp/nodes/traj_ur_wsc.cpp">
+			<Option target="traj_ur_wsc"/>
+		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/dmp/src/dmp.cpp">
 			<Option target="dmp"/>
 		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/dmp/src/dtw.cpp">
 			<Option target="arbitration_test"/>
+			<Option target="mydmp_wsc"/>
 			<Option target="dtw_test"/>
 		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/dmp/src/fourier_approx.cpp">
@@ -5263,6 +5621,7 @@
 		<Unit filename="/home/jiyguo/ur_ws/src/dmp/src/my_dmp.cpp">
 			<Option target="arbitration_test"/>
 			<Option target="my_dmp_test"/>
+			<Option target="mydmp_wsc"/>
 			<Option target="dtw_test"/>
 		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/dmp/src/radial_approx.cpp">
@@ -5321,6 +5680,30 @@
 		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/socket/src/mySocket.cpp">
 			<Option target="socket_test"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/ur_modern_driver/src/do_output.cpp">
+			<Option target="ur_driver"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/ur_modern_driver/src/robot_state.cpp">
+			<Option target="ur_driver"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/ur_modern_driver/src/robot_state_RT.cpp">
+			<Option target="ur_driver"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/ur_modern_driver/src/ur_communication.cpp">
+			<Option target="ur_driver"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/ur_modern_driver/src/ur_driver.cpp">
+			<Option target="ur_driver"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/ur_modern_driver/src/ur_hardware_interface.cpp">
+			<Option target="ur_hardware_interface"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/ur_modern_driver/src/ur_realtime_communication.cpp">
+			<Option target="ur_driver"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/ur_modern_driver/src/ur_ros_wrapper.cpp">
+			<Option target="ur_driver"/>
 		</Unit>
 		<Unit filename="/usr/src/googletest/googlemock/src/gmock-all.cc">
 			<Option target="gmock"/>
@@ -6054,6 +6437,24 @@
 		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/roslaunch/cmake/roslaunchConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\roslaunch\cmake\"/>
 		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/hardware_interface/cmake/hardware_interfaceConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\hardware_interface\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/hardware_interface/cmake/hardware_interfaceConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\hardware_interface\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/controller_manager/cmake/controller_managerConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\controller_manager\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/controller_manager/cmake/controller_managerConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\controller_manager\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/controller_interface/cmake/controller_interfaceConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\controller_interface\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/controller_interface/cmake/controller_interfaceConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\controller_interface\cmake\"/>
+		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/cv_bridge/cmake/cv_bridge-extras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\cv_bridge\cmake\"/>
 		</Unit>
@@ -6165,18 +6566,6 @@
 		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/move_base_msgs/cmake/move_base_msgsConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\move_base_msgs\cmake\"/>
 		</Unit>
-		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/controller_interface/cmake/controller_interfaceConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\controller_interface\cmake\"/>
-		</Unit>
-		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/controller_interface/cmake/controller_interfaceConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\controller_interface\cmake\"/>
-		</Unit>
-		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/hardware_interface/cmake/hardware_interfaceConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\hardware_interface\cmake\"/>
-		</Unit>
-		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/hardware_interface/cmake/hardware_interfaceConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\hardware_interface\cmake\"/>
-		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/joint_trajectory_controller/cmake/joint_trajectory_controllerConfig-version.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\joint_trajectory_controller\cmake\"/>
 		</Unit>
@@ -6221,12 +6610,6 @@
 		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/kdl_conversions/cmake/kdl_conversionsConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\kdl_conversions\cmake\"/>
-		</Unit>
-		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/controller_manager/cmake/controller_managerConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\controller_manager\cmake\"/>
-		</Unit>
-		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/controller_manager/cmake/controller_managerConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\controller_manager\cmake\"/>
 		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/../../../../opt/ros/noetic/share/industrial_robot_status_interface/cmake/industrial_robot_status_interfaceConfig-version.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\opt\ros\noetic\share\industrial_robot_status_interface\cmake\"/>
@@ -6723,17 +7106,29 @@
 		<Unit filename="/home/jiyguo/ur_ws/src/cmake-build-debug/gmm/cmake/gmm-genmsg.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\gmm\cmake\"/>
 		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/cmake-build-debug/socket/catkin_generated/ordered_paths.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\socket\catkin_generated\"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/cmake-build-debug/socket/catkin_generated/package.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\socket\catkin_generated\"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/catkin_generated/ordered_paths.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\ur_modern_driver\catkin_generated\"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/cmake-build-debug/ur_modern_driver/catkin_generated/package.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\ur_modern_driver\catkin_generated\"/>
+		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/catkin_generated/ordered_paths.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\robot_kin\catkin_generated\"/>
 		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/cmake-build-debug/robot_kin/catkin_generated/package.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\robot_kin\catkin_generated\"/>
 		</Unit>
-		<Unit filename="/home/jiyguo/ur_ws/src/cmake-build-debug/socket/catkin_generated/ordered_paths.cmake">
-			<Option virtualFolder="CMake Files\cmake-build-debug\socket\catkin_generated\"/>
+		<Unit filename="/home/jiyguo/ur_ws/src/cmake-build-debug/uu_robot/catkin_generated/ordered_paths.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\uu_robot\catkin_generated\"/>
 		</Unit>
-		<Unit filename="/home/jiyguo/ur_ws/src/cmake-build-debug/socket/catkin_generated/package.cmake">
-			<Option virtualFolder="CMake Files\cmake-build-debug\socket\catkin_generated\"/>
+		<Unit filename="/home/jiyguo/ur_ws/src/cmake-build-debug/uu_robot/catkin_generated/package.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\uu_robot\catkin_generated\"/>
 		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/cmake-build-debug/my_controller/catkin_generated/ordered_paths.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\my_controller\catkin_generated\"/>
@@ -6888,17 +7283,29 @@
 		<Unit filename="/home/jiyguo/ur_ws/src/gmm/package.xml">
 			<Option virtualFolder="CMake Files\gmm\"/>
 		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/socket/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\socket\"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/socket/package.xml">
+			<Option virtualFolder="CMake Files\socket\"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/ur_modern_driver/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ur_modern_driver\"/>
+		</Unit>
+		<Unit filename="/home/jiyguo/ur_ws/src/ur_modern_driver/package.xml">
+			<Option virtualFolder="CMake Files\ur_modern_driver\"/>
+		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/robot_kin/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\robot_kin\"/>
 		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/robot_kin/package.xml">
 			<Option virtualFolder="CMake Files\robot_kin\"/>
 		</Unit>
-		<Unit filename="/home/jiyguo/ur_ws/src/socket/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\socket\"/>
+		<Unit filename="/home/jiyguo/ur_ws/src/uu_robot/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\uu_robot\"/>
 		</Unit>
-		<Unit filename="/home/jiyguo/ur_ws/src/socket/package.xml">
-			<Option virtualFolder="CMake Files\socket\"/>
+		<Unit filename="/home/jiyguo/ur_ws/src/uu_robot/package.xml">
+			<Option virtualFolder="CMake Files\uu_robot\"/>
 		</Unit>
 		<Unit filename="/home/jiyguo/ur_ws/src/my_controller/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\my_controller\"/>

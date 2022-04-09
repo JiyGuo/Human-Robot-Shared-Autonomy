@@ -1173,6 +1173,19 @@ ur_msgs_generate_messages_eus/fast:
 .PHONY : ur_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named traj_ur
+
+# Build rule for target.
+traj_ur: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 traj_ur
+.PHONY : traj_ur
+
+# fast build rule for target.
+traj_ur/fast:
+	$(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/traj_ur.dir/build.make dmp/CMakeFiles/traj_ur.dir/build
+.PHONY : traj_ur/fast
+
+#=============================================================================
 # Target rules for targets named arbitration_test
 
 # Build rule for target.
@@ -1197,6 +1210,32 @@ my_dmp_test: cmake_check_build_system
 my_dmp_test/fast:
 	$(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/my_dmp_test.dir/build.make dmp/CMakeFiles/my_dmp_test.dir/build
 .PHONY : my_dmp_test/fast
+
+#=============================================================================
+# Target rules for targets named traj_ur_wsc
+
+# Build rule for target.
+traj_ur_wsc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 traj_ur_wsc
+.PHONY : traj_ur_wsc
+
+# fast build rule for target.
+traj_ur_wsc/fast:
+	$(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/traj_ur_wsc.dir/build.make dmp/CMakeFiles/traj_ur_wsc.dir/build
+.PHONY : traj_ur_wsc/fast
+
+#=============================================================================
+# Target rules for targets named mydmp_wsc
+
+# Build rule for target.
+mydmp_wsc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mydmp_wsc
+.PHONY : mydmp_wsc
+
+# fast build rule for target.
+mydmp_wsc/fast:
+	$(MAKE) $(MAKESILENT) -f dmp/CMakeFiles/mydmp_wsc.dir/build.make dmp/CMakeFiles/mydmp_wsc.dir/build
+.PHONY : mydmp_wsc/fast
 
 #=============================================================================
 # Target rules for targets named dmp_gennodejs
@@ -2746,19 +2785,6 @@ gmm_gennodejs/fast:
 .PHONY : gmm_gennodejs/fast
 
 #=============================================================================
-# Target rules for targets named robot_kin
-
-# Build rule for target.
-robot_kin: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_kin
-.PHONY : robot_kin
-
-# fast build rule for target.
-robot_kin/fast:
-	$(MAKE) $(MAKESILENT) -f robot_kin/CMakeFiles/robot_kin.dir/build.make robot_kin/CMakeFiles/robot_kin.dir/build
-.PHONY : robot_kin/fast
-
-#=============================================================================
 # Target rules for targets named socket_test
 
 # Build rule for target.
@@ -3134,6 +3160,45 @@ _run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test.xml: cmake_check_build
 _run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test.xml/fast:
 	$(MAKE) $(MAKESILENT) -f fmauch_universal_robot/ur_gazebo/CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test.xml.dir/build.make fmauch_universal_robot/ur_gazebo/CMakeFiles/_run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test.xml.dir/build
 .PHONY : _run_tests_ur_gazebo_roslaunch-check_tests_roslaunch_test.xml/fast
+
+#=============================================================================
+# Target rules for targets named ur_hardware_interface
+
+# Build rule for target.
+ur_hardware_interface: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ur_hardware_interface
+.PHONY : ur_hardware_interface
+
+# fast build rule for target.
+ur_hardware_interface/fast:
+	$(MAKE) $(MAKESILENT) -f ur_modern_driver/CMakeFiles/ur_hardware_interface.dir/build.make ur_modern_driver/CMakeFiles/ur_hardware_interface.dir/build
+.PHONY : ur_hardware_interface/fast
+
+#=============================================================================
+# Target rules for targets named ur_driver
+
+# Build rule for target.
+ur_driver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ur_driver
+.PHONY : ur_driver
+
+# fast build rule for target.
+ur_driver/fast:
+	$(MAKE) $(MAKESILENT) -f ur_modern_driver/CMakeFiles/ur_driver.dir/build.make ur_modern_driver/CMakeFiles/ur_driver.dir/build
+.PHONY : ur_driver/fast
+
+#=============================================================================
+# Target rules for targets named robot_kin
+
+# Build rule for target.
+robot_kin: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_kin
+.PHONY : robot_kin
+
+# fast build rule for target.
+robot_kin/fast:
+	$(MAKE) $(MAKESILENT) -f robot_kin/CMakeFiles/robot_kin.dir/build.make robot_kin/CMakeFiles/robot_kin.dir/build
+.PHONY : robot_kin/fast
 
 #=============================================================================
 # Target rules for targets named move_base_msgs_generate_messages_nodejs
@@ -4887,11 +4952,14 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... my_dmp_test"
+	@echo "... mydmp_wsc"
 	@echo "... robotControllerTest"
 	@echo "... robot_kin"
 	@echo "... robot_state_helper"
 	@echo "... socket_test"
 	@echo "... test_rtde_client"
+	@echo "... traj_ur"
+	@echo "... traj_ur_wsc"
 	@echo "... ur10_kin"
 	@echo "... ur10_moveit_plugin"
 	@echo "... ur3_kin"
@@ -4899,6 +4967,8 @@ help:
 	@echo "... ur5_kin"
 	@echo "... ur5_moveit_plugin"
 	@echo "... ur_controllers"
+	@echo "... ur_driver"
+	@echo "... ur_hardware_interface"
 	@echo "... ur_robot_driver"
 	@echo "... ur_robot_driver_node"
 	@echo "... ur_robot_driver_plugin"

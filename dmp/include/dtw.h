@@ -12,8 +12,8 @@ using namespace std;
 namespace dtw{
 
 const int m_size = 2000;
-const double f_factor = 0.97;
-//const double f_factor = 1;
+//const double f_factor = 0.999;
+const double f_factor = 1;
 
 
 typedef vector<double> DVector;
