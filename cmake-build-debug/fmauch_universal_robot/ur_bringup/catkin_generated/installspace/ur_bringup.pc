@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: ur_bringup
-Description: Description of ur_bringup
-Version: 1.2.1
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

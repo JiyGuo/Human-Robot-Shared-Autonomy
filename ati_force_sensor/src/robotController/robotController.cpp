@@ -1,29 +1,43 @@
 //
 // Created by root on 8/22/20.
 //
-#include "robotController/robotController.h"
-robotController:: robotController(ros::NodeHandle *n,bool sim)
+#include "../../include/robotController/robotController.h"
+robotController:: robotController(ros::NodeHandle *n,const std::string& prefix, bool sim)
 {
     nh = n;
     loop_rate = new ros::Rate(frequency);
-    if (sim){
-        prefix = "";
-        ns = "";
-        arm_client = new Client("/arm_controller/follow_joint_trajectory", true);
-    }else{
-        prefix = "right_";
-        ns = "ur5/";
-        arm_client = new Client("/right_ur5/right_pos_based_controller/follow_joint_trajectory", true);
-    }
-    gripper_cmd_pub = nh->advertise<control_msgs::GripperCommandActionGoal>("gripper_controller/gripper_cmd/goal", 10);
-    joint_state_sub = nh->subscribe<sensor_msgs::JointState>("/"+prefix+ns+prefix+"joint_states", 10, &robotController::joint_statesCB, this);
+    kinematics = new Robot_Kinematics_Annalytical(prefix);
+    std::string controller;
+    std::string joint_state_topic;
     jointName.clear();
-    jointName.emplace_back(prefix+"shoulder_pan_joint");
-    jointName.emplace_back(prefix+"shoulder_lift_joint");
-    jointName.emplace_back(prefix+"elbow_joint");
-    jointName.emplace_back(prefix+"wrist_1_joint");
-    jointName.emplace_back(prefix+"wrist_2_joint");
-    jointName.emplace_back(prefix+"wrist_3_joint");
+
+    if (sim){
+        ns = "";
+        controller = "/arm_controller/follow_joint_trajectory";
+        joint_state_topic = "/joint_states";
+//        std::cout<<controller<<std::endl;
+        jointName.emplace_back("shoulder_pan_joint");
+        jointName.emplace_back("shoulder_lift_joint");
+        jointName.emplace_back("elbow_joint");
+        jointName.emplace_back("wrist_1_joint");
+        jointName.emplace_back("wrist_2_joint");
+        jointName.emplace_back("wrist_3_joint");
+    }else{
+        ns = "_ur5/";
+        controller =  "/"+prefix+ns+prefix+"_pos_based_controller/follow_joint_trajectory";
+        joint_state_topic = "/"+prefix+ns+prefix+"_joint_states";
+        jointName.emplace_back(prefix+"_shoulder_pan_joint");
+        jointName.emplace_back(prefix+"_shoulder_lift_joint");
+        jointName.emplace_back(prefix+"_elbow_joint");
+        jointName.emplace_back(prefix+"_wrist_1_joint");
+        jointName.emplace_back(prefix+"_wrist_2_joint");
+        jointName.emplace_back(prefix+"_wrist_3_joint");
+    }
+    arm_client = new Client(controller, true);
+
+    gripper_cmd_pub = nh->advertise<control_msgs::GripperCommandActionGoal>("gripper_controller/gripper_cmd/goal", 10);
+    joint_state_sub = nh->subscribe<sensor_msgs::JointState>(joint_state_topic, 10, &robotController::joint_statesCB, this);
+
     arm_state = arm_client->waitForServer(ros::Duration(3));
     if(arm_state) ROS_INFO("connected the arm server.");
     else {ROS_WARN("connect the arm server failed.");}
@@ -108,7 +122,7 @@ void robotController::getRobotVelocity(KDL::Twist &Vee) {
 }
 
 void robotController::getRobotFrame(KDL::Frame &currFrame) {
-    kinematics.FKine(joint_state,currFrame);
+    kinematics->FKine(joint_state,currFrame);
 }
 
 void robotController::printCurJoint() {
@@ -171,21 +185,21 @@ void robotController::joint_statesCB(const sensor_msgs::JointState::ConstPtr &ms
 void robotController::moveToFrame(const KDL::JntArray& jnt_init,  const KDL::Frame& targetFrame,const double& time, bool wait_for_D){
     KDL::JntArray jnt_target;
     jnt_target.resize(6);
-    kinematics.IK_analytical(jnt_init,targetFrame,jnt_target);
+    kinematics->IK_analytical(jnt_init,targetFrame,jnt_target);
     moveToJoint( jnt_target, time,  wait_for_D);
 }
 
 void robotController::moveToFrame(const KDL::Frame& targetFrame,const double& time, bool wait_for_D){
     KDL::JntArray jnt_target;
     jnt_target.resize(6);
-    kinematics.IK_analytical(joint_state, targetFrame,jnt_target);
+    kinematics->IK_analytical(joint_state, targetFrame,jnt_target);
     moveToJoint( jnt_target, time,  wait_for_D);
 }
 
 void robotController::moveToFrame(const KDL::Frame& targetFrame, const KDL::JntArray& jnt_speed, const double& time, bool wait_for_D){
     KDL::JntArray jnt_target;
     jnt_target.resize(6);
-    kinematics.IK_analytical(joint_state, targetFrame,jnt_target);
+    kinematics->IK_analytical(joint_state, targetFrame,jnt_target);
     moveToJoint( jnt_target,jnt_speed, time,  wait_for_D);
 }
 
@@ -417,11 +431,11 @@ void robotController::getTfTranslation(const std::string& base_frameid,const std
 }
 
 void robotController::FKine(const KDL::JntArray& joint,KDL::Frame &currFrame){
-    kinematics.FKine(joint,currFrame);
+    kinematics->FKine(joint,currFrame);
 }
 
 void robotController::IK_analytical(const KDL::JntArray& jnt_init, const KDL::Frame& frame, KDL::JntArray &jnt_out){
-    kinematics.IK_analytical(jnt_init, frame, jnt_out);
+    kinematics->IK_analytical(jnt_init, frame, jnt_out);
 }
 
 robotController::~robotController() {
@@ -431,5 +445,7 @@ robotController::~robotController() {
     loop_rate = nullptr;
     delete arm_client;
     arm_client = nullptr;
+    delete kinematics;
+    kinematics = nullptr;
 //    delete nh;
 }

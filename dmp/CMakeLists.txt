@@ -37,7 +37,10 @@ find_package(catkin REQUIRED COMPONENTS
 #        ${tinyxml2_DIR}/libtinyxml2.so)
 
 LINK_DIRECTORIES(/usr/lib/x86_64-linux-gnu)
-
+link_libraries(libxmlrpcpp.so)
+link_directories(/opt/ros/noetic/lib)
+link_directories(/home/jiyguo/ur_ws/devel/lib)
+link_directories(/home/jiyguo/ur_ws/devel/lib/ati_force_sensor)
 
 add_message_files(
    FILES
@@ -68,7 +71,14 @@ CATKIN_DEPENDS common_msgs image_common message_runtime
 include_directories(
   ~/tinyxml
   include
-  ../../devel/include
+  ../ati_force_sensor/src/MCC_ATI
+  ../ati_force_sensor/include
+        /usr/local/include/kdl
+        /usr/include/python2.7
+        /usr/include/eigen3
+        /opt/ros/noetic/include
+
+        ../../devel/include
         ../dmp/include
         ../gmm/include
         ../robot_kin/include
@@ -123,8 +133,8 @@ target_link_libraries(dtw_test ${catkin_LIBRARIES} ${Eigen_LIBRARIES} dmp)
 add_executable(my_dmp_test nodes/my_dmp_test.cpp src/my_dmp.cpp)
 target_link_libraries(my_dmp_test dmp controller)
 
-add_executable(arbitration_test nodes/arbitration.cpp src/dtw.cpp src/my_dmp.cpp)
-target_link_libraries(arbitration_test controller dmp)
+add_executable(arbitration_test nodes/arbitration.cpp src/dtw.cpp src/my_dmp.cpp )
+target_link_libraries(arbitration_test controller dmp ati_library)
 
 add_executable(traj_ur nodes/traj_ur.cpp)
 target_link_libraries(traj_ur controller)

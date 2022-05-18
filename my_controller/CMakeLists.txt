@@ -68,54 +68,8 @@ install(DIRECTORY
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
-#add_executable(test1 src/test.cpp
+#
+#add_executable(robotControllerTest src/robotController/robotControllerTest.cpp
 #                   src/robotController/robotController.cpp)
-#target_link_libraries(test1 ${catkin_LIBRARIES} ${Boost_LIBRARIES} orocos-kdl robot_kin)
-
-
-add_executable(robotControllerTest src/robotController/robotControllerTest.cpp
-                   src/robotController/robotController.cpp)
-target_link_libraries(robotControllerTest ${catkin_LIBRARIES} ${Boost_LIBRARIES} orocos-kdl robot_kin)
-
-#add_executable(dmp_robot src/dmp_step.cpp
-#        src/robotController/robotController.cpp)
-#target_link_libraries(dmp_robot ${catkin_LIBRARIES} ${Boost_LIBRARIES} orocos-kdl robot_kin tinyxml2 dmp)
-
-
-
+#target_link_libraries(robotControllerTest ${catkin_LIBRARIES} ${Boost_LIBRARIES} orocos-kdl robot_kin)
 #
-#add_executable(loadCameraImage src/readImage/loadCameraImage.cpp
-#        src/readImage/readImage.cpp)
-#target_link_libraries(loadCameraImage ${catkin_LIBRARIES} ${Boost_LIBRARIES} orocos-kdl)
-#
-#add_executable(grasp_cubic src/grasp_cubic.cpp
-#        src/readImage/readImage.cpp
-#        src/robotController/robotController.cpp
-#        )
-#target_link_libraries(grasp_cubic ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${OpenCV_LIBRARIES} orocos-kdl robot_kin)
-#
-#add_executable(calibration2d src/readChess.cpp
-#        src/readImage/readImage.cpp
-#        src/robotController/robotController.cpp
-#        )
-#target_link_libraries(calibration2d ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${OpenCV_LIBRARIES} orocos-kdl robot_kin)
-#
-#add_executable(get_pos src/get_pos.cpp
-#        src/robotController/robotController.cpp
-#        )
-#target_link_libraries(get_pos ${catkin_LIBRARIES} ${Boost_LIBRARIES} orocos-kdl robot_kin)
-#
-#add_executable(detect_test src/detect_test.cpp
-#        src/readImage/readImage.cpp
-#        )
-#target_link_libraries(detect_test ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${OpenCV_LIBRARIES} orocos-kdl)
-
-
-# --------------------------- moveIt -------------------------------------- #
-
-#
-#add_executable(simpleTest src/moveIt/simpleTest.cpp)
-#target_link_libraries(simpleTest ${catkin_LIBRARIES} ${Boost_LIBRARIES})
-#
-#add_executable(collisionTest src/moveIt/collisionTest.cpp)
-#target_link_libraries(collisionTest ${catkin_LIBRARIES} ${Boost_LIBRARIES})

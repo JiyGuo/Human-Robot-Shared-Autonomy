@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: uu_robot
-Description: Description of uu_robot
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

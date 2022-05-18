@@ -13,9 +13,7 @@
 #include <geometry_msgs/PoseStamped.h>
 #include <visualization_msgs/Marker.h>
 
-#include "myATI.h"
-
-const bool IF_SIM = false;
+const bool IF_SIM = true;
 
 using namespace std;
 using namespace tinyxml2;
@@ -23,12 +21,13 @@ using namespace myDmp;
 using namespace dtw;
 
 typedef vector<int> IVector;
+typedef vector<bool> BVector;
 
 // 宏定义
-const int N_BASES = 15;             // 高斯核函数数量
+const int N_BASES = 12;             // 高斯核函数数量
 const int HZ = 125;                 // 频率
 const int N_LIBS=3;                 // 技能库数量
-const int DIM=2;                    // dimensions
+const int DIM=2;                    // dimensiona
 const double DT = 1.0 / HZ;         // dt
 const double F_M = 20;              // 最大力
 // Admittance gain
@@ -37,15 +36,11 @@ const DVector M_D = {100.0,100.0}; // 惯性参数
 
 DVector C_D(DIM,0);  // 阻尼参数
 // trajectory information
-
 //const DVector x_0 = {0.52 , -0.22};
-//const DVector goal = {0.50277 , -0.41711};
+//const DVector goal = {0.44 , -0.38};
 
-const DVector x_0 = {0.52 , -0.22};
-const DVector goal = {0.44 , -0.38};
-
-//const DVector x_0 = {0.16264 , -0.1453};
-//const DVector goal = {0.14541 , -0.34241};
+const DVector x_0 = {0.16264 , -0.1453};
+const DVector goal = {0.14541 , -0.34241};
 
 const DVector x_dot_0 = {0.0 , 0.0};
 const DVector goal_thresh = {0.005 , 0.005};
@@ -104,13 +99,23 @@ int main(int argc, char **argv){
     ros::init(argc, argv, "arbitration");
     ros::NodeHandle n;
     ros::Rate rate(HZ);
+    // 发布各个dmp隶属度概率
+    ros::Publisher probPub = n.advertise<geometry_msgs::PointStamped>("/dmp/probability",10, true);
+    ros::Publisher forceDmpPub = n.advertise<std_msgs::Float64MultiArray>("/dmp/force_robot",10, true);
 
+//    ros::Publisher pathPub = n.advertise<nav_msgs::Path>("/shared_control/online_trajectory",10, true);;
     vector<ros::Publisher> dmp_paths_pub;
     ros::Publisher dmp_path_pub;
 
     geometry_msgs::PointStamped prob;
-    // 可视化
+    std_msgs::Float64MultiArray force_msgs;
+    // 订阅当前末端期望位置
+    ros::Publisher statePub = n.advertise<dmp::DMPPoint>("/shared_control/plan_state",10);
     ros::Publisher dmp_path_online = n.advertise<visualization_msgs::Marker>("/shared_control/markerPath",10, true);
+
+    ros::Subscriber forceHumSub = n.subscribe<std_msgs::Float64MultiArray>("/xb4s/force_human", 10, force_humanCB);
+
+    // 可视化
     dmp_path_pub = n.advertise<visualization_msgs::Marker>("dmp/markerPath1",10, true);
     dmp_paths_pub.push_back(dmp_path_pub);
     dmp_path_pub = n.advertise<visualization_msgs::Marker>("dmp/markerPath2",10, true);
@@ -141,21 +146,6 @@ int main(int argc, char **argv){
     spinner.start();
     ros::Duration(1).sleep();
 
-    KDL::Frame frame;
-    KDL::Wrench wrench;
-    KDL::Rotation rot = KDL::Rotation::RotZ(-M_PI/4.0);
-    ForceSensor ft_sensor;
-    ft_sensor.init();
-//    while(ros::ok()){
-//        myController.getRobotFrame(frame);
-//        frame.M = frame.M * rot;
-//        wrench = ft_sensor.getCompsenCartForce(frame);
-//        for (int i = 0; i < 3; ++i) {
-//            std::cout<<wrench.force.data[i]<<" , ";
-//        }
-//        std::cout<<endl;
-//    }
-
     // 参考轨迹总时间
     for (int i = 0; i < N_LIBS; ++i) {
         taus[i] = 10;
@@ -181,6 +171,7 @@ int main(int argc, char **argv){
             tmp_frame.p.x(trajs[j].points[i].positions[0]);
             tmp_frame.p.y(trajs[j].points[i].positions[1]);
             mydata_dmps<<tmp_frame.p.x()<<" "<<tmp_frame.p.y()<<endl;
+//            Visualize( dmp_paths_pub[j], tmp_frame.p.data);
             DVector tmp = {tmp_frame.p.x(),tmp_frame.p.y()};
             marker_line(tmp, marker, j ,color[j]);
             }
@@ -188,6 +179,7 @@ int main(int argc, char **argv){
         mydata_dmps.close();
         points.poses.clear();
     }
+
 
     /*
      * 初始化变量
@@ -217,7 +209,7 @@ int main(int argc, char **argv){
     targetFrame.M = KDL::Rotation::RotX(M_PI);
     targetFrame.p.x(x_0[0] );
     targetFrame.p.y(x_0[1] );
-    targetFrame.p.z(1.3 );
+    targetFrame.p.z(1.1 );
     myController.moveToFrame(myController.homeJoint,targetFrame,5,true); //走到初始位置
     sleep(3);
     DVector xdd(DIM);
@@ -232,17 +224,11 @@ int main(int argc, char **argv){
     bool flag = false;
     int counter = 0;
     visualization_msgs::Marker marker;
-    // Online
-    while(ros::ok() && !at_goal && counter<=20.0/DT ){
 
-        myController.getRobotFrame(frame);
-        frame.M = frame.M * rot;
-        wrench = ft_sensor.getCompsenCartForce(frame);
-        for (int i = 0; i < DIM; ++i) {
-            force_human[i] = wrench.force.data[i];
-        }
-//        std::cout<<endl;
-//        // 人类力输入仿真测试
+    // Online clasify
+    while(ros::ok()){
+
+//        人类力输入仿真测试
 //        if( cur_t<=2 ){
 //            force_human[0] = 5;
 //            force_human[1] = -5;
@@ -280,6 +266,7 @@ int main(int argc, char **argv){
 
         // 分类的dmp编号
         size_t idx = std::max_element(confidances.begin(), confidances.end()) - confidances.begin();
+
         my_dmps[idx]->get_dgain(dgain);
 
 //        at_goal = my_dmps[idx]->get_force(cur_state, couple_term,
@@ -290,7 +277,8 @@ int main(int argc, char **argv){
         timer_count = find_local_nearest(cur_state,templ_counters[idx],trajs[idx],timer_count);
         cur_t = (double)(timer_count+1)/trajs[idx].points.size() * taus[idx];
         ROS_INFO("cur_t: %f",cur_t);
-        at_goal = my_dmps[idx]->get_force(cur_state, couple_term,cur_t, force_dmp);
+        at_goal = my_dmps[idx]->get_force(cur_state, couple_term,
+                                          cur_t, force_dmp);
 
         my_data<<force_human[0]<<" "<<force_human[1]<<" ";
         my_data<<force_dmp[0]<<" "<<force_dmp[1]<<" ";
@@ -322,7 +310,13 @@ int main(int argc, char **argv){
         }else{
             flag = true;
         }
-
+        statePub.publish(plan_state);
+        if(at_goal){
+            plan_state.velocities[0] = 0;
+            plan_state.velocities[1] = 0;
+            statePub.publish(plan_state);
+            break;
+        }
         rate.sleep();
     }
     my_data.close();
@@ -343,7 +337,7 @@ void marker_line(const DVector& place,visualization_msgs::Marker& marker,int idx
     marker.action = visualization_msgs::Marker::ADD;
     p.x = place[0];
     p.y = place[1];
-    p.z = 1.3;
+    p.z = 1.1;
     marker.scale.x = 0.003;
     marker.color.r = 0.0;
     marker.color.g = 0.0;

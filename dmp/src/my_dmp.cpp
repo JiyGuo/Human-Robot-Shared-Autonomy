@@ -117,7 +117,11 @@ namespace myDmp {
         return true;
     }
 
-
+    /**
+ * @brief 从xml文件中导入dmp参数
+ * @param[in] dmp_file 文件路径
+ */
+    // 从xml文件中导入dmp参数
     bool MyDmp::LoadFromParam(const std::string& dmp_file){
         XMLDocument doc;
         XMLError state = doc.LoadFile(dmp_file.c_str());
@@ -254,6 +258,13 @@ namespace myDmp {
         return at_goal;
     }
 
+    /**
+     * @brief 单步规划
+     * @param[in] cur_state The current state of robot ee
+     * @param[in] couple_term couple term from GMM workspace constraint
+     * @param[in] cur_t The current execution time
+     * @param[out] plan Next step planned
+     */
     bool MyDmp::get_step(const DMPPoint &cur_state, const DVector &couple_term, const double& cur_t, DMPPoint &plan) const{
         plan.positions.clear();
         plan.velocities.clear();
@@ -319,11 +330,19 @@ namespace myDmp {
         return at_goal;
     }
 
+
     bool MyDmp::get_step(const DMPPoint &cur_state, const double &cur_t, DMPPoint &plan) const{
         DVector couple_term(3,0);
         return get_step(cur_state,couple_term,cur_t,plan);
     }
 
+    /**
+     * @brief 公式5-18，以为当前dmp为机器人的输入时，以admittance control的表达形式推导出来的force，
+     * @param[in] cur_state The current state of robot ee
+     * @param[in] couple_term couple term from GMM workspace constraint
+     * @param[in] cur_t The current execution time
+     * @param[out] force_dmp force项
+     */
     bool MyDmp::get_force(const DMPPoint &cur_state, const DVector &couple_term,
                           const double& cur_t, DVector& force_dmp) const{
 //        std::cout<<"cur_t: "<<cur_t<<std::endl;
